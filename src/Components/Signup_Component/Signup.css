@@ -1,0 +1,100 @@
+/* Container to center the sign-up form */
+.signup-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    
+  }
+  
+  /* Sign-up form styling */
+  .signup-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Sign-up button styling */
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #28a745; */
+    background-color:orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    /* background-color: #218838; */
+    background-color: orange;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Bottom links for Sign In */
+  .bottom-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signin-link {
+    /* color: #007bff; */
+    color: orange;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .signin-link:hover {
+    text-decoration: underline;
+    color: orange;
+  }
+  
+
+@media (max-width:768px) {
+  .signup-container {
+   
+   
+    padding: 10rem 2rem;
+   
+    margin-top: 0;
+   
+    
+  }
+}  

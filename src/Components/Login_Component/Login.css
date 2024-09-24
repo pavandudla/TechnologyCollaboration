@@ -1,0 +1,178 @@
+/* Container to center the login form */
+/* .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+  } */
+  
+  /* Login form styling */
+  /* .login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  } */
+  
+  /* Form group styling */
+  /* .form-group {
+    margin-bottom: 20px;
+  } */
+  
+  /* label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  } */
+  
+  /* input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px; */
+    /* border: 1px solid #ccc; */
+    /* border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+   */
+  /* Login button styling */
+  /* .login-button {
+    width: 100%;
+    padding: 10px; */
+    /* background-color: #007bff; */
+    /* background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  } */
+  
+  /* .login-button:hover { */
+    /* background-color: #0056b3; */
+    /* background-color: orange;
+  } */
+  
+  /* Error message styling */
+  /* .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  } */
+  
+
+/* Container to center the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+  }
+  .login-container h2{
+    font-family: 'Rubik';
+    font-weight: 300;
+  }
+  
+  /* Login form styling */
+  .login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Rubik';
+    font-weight: 300;
+
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #007bff; */
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Rubik';
+    font-weight: 300;
+  }
+  
+  .login-button:hover {
+    /* background-color: #0056b3; */
+    background-color: orange;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Bottom links for Forgot Password and Sign Up */
+  .bottom-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .forgot-password,
+  .signup-link {
+    /* color: #007bff; */
+    color: orange;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Rubik';
+    font-weight: 200;
+  }
+  
+  .forgot-password:hover,
+  .signup-link:hover {
+    text-decoration: underline;
+    color: orange;
+  }
+  
+  .bottom-links span {
+    color: #999;
+    font-size: 14px;
+  }
+
+  @media (max-width:768px) {
+    .login-container {
+      padding: 2rem;
+    }
+  }
+  

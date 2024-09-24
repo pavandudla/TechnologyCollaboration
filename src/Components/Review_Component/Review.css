@@ -1,0 +1,39 @@
+.Review_mainContainer{
+    background-color: #ece9f9;
+    padding: 6rem;
+    width: 100%;
+    box-sizing: border-box;
+   
+    
+}
+.Review_subContainer{
+    display: flex;
+    gap: 7rem;
+    /* flex-wrap: wrap; */
+}
+.review_description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+.review_description h3{
+    font-size: 20px;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+
+@media (max-width:768px) {
+    .Review_subContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .review_description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

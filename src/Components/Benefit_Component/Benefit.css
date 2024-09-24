@@ -1,0 +1,63 @@
+.Benefit_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    padding-bottom: 8rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    /* font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 100; */
+    
+}
+.Benefit_Container h2{
+    color: orange;
+    font-family: 'Rubik';
+    font-weight: 100;
+    font-size: 18px;
+   
+}
+.Benefit_Container h1{
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 30px;
+}
+.Benifit_img_container{
+    display: flex;
+    gap: 5rem;
+    padding-top: 4rem;
+}
+.Benifit_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transition: 1s;
+}
+.Benifit_image:hover{
+    transform: translateY(-5px);
+}
+.Benifit_image h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+@media (max-width:768px) {
+    .Benefit_Container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .Benifit_img_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
