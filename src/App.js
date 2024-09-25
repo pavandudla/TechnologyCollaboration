@@ -32,22 +32,22 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-     <Router>
-     <ScrollToTop/>
-     <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/training" element={<Course/>} />
-        <Route path="/footer" element={<Footer/>} />
-        <Route path="/single_course" element={<Python/>} />
-        <Route path="/fullstack" element={<Python_fullstack/>} />
-        <Route path="/django" element={<Django/>} />
-        <Route path="/odoo" element={<Odoo/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
-      </Routes>
-      <Footer/>
-    </Router>
+      <Router basename="/TechnologyCollaboration">
+        <ScrollToTop/>
+        <Navbar/>
+        <Routes >
+            <Route path="/" element={<Home />} />
+            <Route path="/training" element={<Course/>} />
+            <Route path="/footer" element={<Footer/>} />
+            <Route path="/single_course" element={<Python/>} />
+            <Route path="/fullstack" element={<Python_fullstack/>} />
+            <Route path="/django" element={<Django/>} />
+            <Route path="/odoo" element={<Odoo/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/signup" element={<Signup/>} />
+        </Routes>
+        <Footer/>
+      </Router>
    
     </div>
   );
