@@ -1,6 +1,5 @@
 import {React} from 'react';
 import './python_fullstack.css';
-import team from './../../Media/team.jpg';
 import pythonfullstack_img from './../../Media/pythonfullstack_image.jpg'
 import { useState } from 'react';
 import Babai from './../../Media/babai.png'

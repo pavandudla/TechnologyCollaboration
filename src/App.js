@@ -27,30 +27,27 @@ import Odoo from './Components/Odoo_Component/Odoo.js';
 import ScrollToTop from './Components/Scrolltop/ScrollTop.js';
 import Login from './Components/Login_Component/Login.js';
 import Signup from './Components/Signup_Component/Signup.js';
-import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <ScrollToTop/>
-        <Navbar/>
-        <Routes >
-            <Route path="/" element={<Home />} />
-            <Route path="/training" element={<Course/>} />
-            <Route path="/footer" element={<Footer/>} />
-            <Route path="/single_course" element={<Python/>} />
-            <Route path="/fullstack" element={<Python_fullstack/>} />
-            <Route path="/django" element={<Django/>} />
-            <Route path="/odoo" element={<Odoo/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/signup" element={<Signup/>} />
-        </Routes>
-        <Footer/>
-      </Router>
-   
-    </div>
+    <Router>
+      <ScrollToTop/>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/training" element={<Course />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/single_course" element={<Python />} />
+        <Route path="/fullstack" element={<Python_fullstack />} />
+        <Route path="/django" element={<Django />} />
+        <Route path="/odoo" element={<Odoo />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
