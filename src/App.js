@@ -27,13 +27,13 @@ import Odoo from './Components/Odoo_Component/Odoo.js';
 import ScrollToTop from './Components/Scrolltop/ScrollTop.js';
 import Login from './Components/Login_Component/Login.js';
 import Signup from './Components/Signup_Component/Signup.js';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Router basename="/TechnologyCollaboration">
+      <Router basename="">
         <ScrollToTop/>
         <Navbar/>
         <Routes >
