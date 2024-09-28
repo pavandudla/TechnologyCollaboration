@@ -150,7 +150,7 @@ figure{
 
 
 
-@media (max-width:768px) {
+@media (min-width:321px) and (max-width:426px) {
     .Course_container{
         width: 100%;
         height:fit-content;
@@ -185,6 +185,12 @@ figure{
     .course_description{
         font-size: 12px;
         padding: 1rem;
+    }
+    .course_description p{
+        color: black;
+    }
+    .course_details #django-img{
+        height: 170px;
     }
     .course_description h2{
         font-size: 25px;

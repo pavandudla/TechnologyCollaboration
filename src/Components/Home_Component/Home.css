@@ -34,17 +34,21 @@
     z-index: -1; 
 }  
 /* Media query for 768px screen */
-@media only screen and (max-width: 768px) {
+@media (min-width:321px) and (max-width: 426px) {
     .It{
         display: flex;
         flex-direction: column;
-        margin-top: 8rem;
+        margin-top: 6rem;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
         margin-left: 0;
+        padding-bottom:0;
+        margin-bottom: 0;
+        height:70vh;
     }
     .It h1 {
         font-size: 1.5rem; /* Smaller font size for the heading */
+        width: 80%;
     }
 
     .It img {
@@ -53,7 +57,7 @@
     }
 
     .video-background {
-        height: 550px; /* Adjust height of the video background */
+        height: 450px; /* Adjust height of the video background */
         width: 100%;
     }
 

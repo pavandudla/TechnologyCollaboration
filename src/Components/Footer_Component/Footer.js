@@ -12,16 +12,16 @@ const Footer=()=>{
                 <p>Find Us</p>
                 <div className='footer_description'>
                     <div className='footer_icons'>
-                            <MdAddLocation color='#ffb607' className='icon'/>
+                            <MdAddLocation color='#ffb607' className='icon' size={24}/>
                             <div>4-183/69,Nri Colony,Hyderabad,Telangana</div>
                     </div>
                     <div className='footer_icons'>
-                            <FaEnvelope color='#ffb607' className='icon'/>
+                            <FaEnvelope color='#ffb607' className='icon' size={20}/>
                             <div>techcollab.python@gmail.com</div>
                             
                     </div>
                     <div className='footer_icons'>
-                            <BiSolidPhoneCall color='#ffb607' className='icon'/>
+                            <BiSolidPhoneCall color='#ffb607' className='icon' size={24}/>
                             <div>+919966079191</div>
                     </div>
                     
