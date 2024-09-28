@@ -51,9 +51,82 @@
 }
 
 
+@media (max-width:320px) {
+    .main_container{
+        background-color: black;
+        width: 100%;
+        /* padding-top: 1rem;
+        padding-bottom: 4rem; */
+        padding-top:0;
+        padding-bottom:0;
+        font-family: 'Rubik';
+        font-weight: 200; /* Bold weight with Italic style */
+        font-style: normal;
+        box-sizing: border-box;
+        padding:0;
+        
+        
+    }
+    .Footer_container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-content:baseline;
+        box-sizing: border-box;
+        /* border: 5px solid white; */
+        padding: 2rem;
+       
+       
+    }
+    .Findus_container{
+        color: white;
+        text-align:left;
+        /* border: 1px solid white; */
+        box-sizing: border-box;
+    }
+    .Findus_container p{
+        color: white;
+        font-size:17px;
+        font-weight: bold;
+        border-bottom: 1px solid orange;
+        width:100%;
+        padding-bottom: 1rem;
+        font-family: 'Rubik';
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    .footer_description{
+        display: flex;
+        flex-direction:column;
+        text-align: left;
+        padding-top: 1rem;
+        gap: 1rem;
+        font-size: 12px;
+    }
+    .links{
+        color: white;
+        font-size:12px;
+        font-weight: bold;
+        border-bottom: 1px solid orange;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .footer_icons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: 12px;
+        
+        
+    }
+   
+   
+  
+}
 
-
-@media (max-width:768px) {
+@media (min-width:321px) and (max-width:768px) {
     .main_container{
         width: 100%;
         box-sizing: border-box;
@@ -63,7 +136,7 @@
     .Footer_container {
         display: flex;
         flex-direction: column;
-        align-content: center;
+        align-content:center;
         gap:4rem;
     }
    

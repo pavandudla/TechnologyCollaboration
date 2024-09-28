@@ -63,6 +63,38 @@
     }
 }
 
+@media (max-width:320px) {
+    .It{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        padding-bottom:0;
+        margin-bottom: 0;
+        height:80vh;
+    }
+    .It h1 {
+        font-family: 'Rubik';
+        font-size: 15px;
+        text-align: center;
+        width: 17rem;
+    }
+    .It img{
+        width: 100%;
+    }
+    .video-background {
+        height: 430px; /* Adjust height of the video background */
+        width: 100%;
+    }
+    #background-video {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
 
 
 

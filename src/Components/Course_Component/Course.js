@@ -22,7 +22,7 @@ const Course=()=>{
                     <Link to='/single_course'><img src={pythonImage} width='100%'/></Link>
                     <div className='course_description'>
                         <h2>Python </h2>
-                        <h5>Every thing you need to program in python in one course(include one real time project) </h5>
+                        <p>Every thing you need to program in python in one course  (include one real time project) </p>
                     </div>
                     
                 </div>
@@ -30,21 +30,21 @@ const Course=()=>{
                     <Link to='/fullstack'><img src={pythonImage} width='100%'/></Link>
                     <div className='course_description'>
                         <h2>FullStack with python </h2>
-                        <h5>Every thing you need to program in python in one course(include one real time project) </h5>
+                        <p>Every thing you need to program in python in one course  (include one real time project) </p>
                     </div>
                 </div>
                 <div className='course_details'>
-                    <Link to='/django'><img src={DjangoImage} width='100%' height="40%"/></Link>
+                    <Link to='/django'><img src={DjangoImage} width='100%' height="40%" id='django-img'/></Link>
                     <div className='course_description'>
                         <h2>Django </h2>
-                        <h5>Every thing you need to program in python in one course(include one real time project) </h5>
+                        <p>Every thing you need to program in python in one course  (include one real time project) </p>
                     </div>
                 </div>
                 <div className='course_details'>
                     <Link to='/odoo'><img src={OdooImage} width='100%' height="40%"/></Link>
                     <div className='course_description'>
                         <h2>Odoo </h2>
-                        <h5>Every thing you need to program in python in one course(include one real time project) </h5>
+                        <p>Every thing you need to program in python in one course  (include one real time project) </p>
                     </div>
                 </div>
                 </figure>

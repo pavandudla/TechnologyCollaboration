@@ -242,3 +242,35 @@ figure{
     } */
     
 }
+
+@media (max-width:320px) {
+    .Course_container{
+        background-color: #ece9f9;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 4rem;
+        font-family: 'Rubik';
+        margin-top: 3rem;
+        box-sizing: border-box;
+    }
+    .Course_container h1{
+        font-size: 17px;
+    }
+    .course_description h2{
+        font-size: 17px;
+    }
+    .course_description{
+        font-size: 13px;
+        font-family: 'Rubik';
+    }
+    .course_description p{
+        color: black;
+    }
+    .course_details #django-img{
+        height: 120px;
+    }
+    
+}

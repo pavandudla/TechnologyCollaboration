@@ -22,8 +22,36 @@
     font-family: 'Rubik';
     font-weight: 300;
 }
+@media (max-width:320px) {
+    .Review_mainContainer{
+        padding: 2rem;
+    }
+    .Review_subContainer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+        padding: 0;
+        gap: 2rem;
+    }
+    .review_description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .review_description img{
+        width: 80%;
+    }
+    .review_description h3{
+        font-size: 15px;
+        font-family: 'Rubik';
+        font-weight: 300;
+        
+    }
+}
 
-@media (max-width:768px) {
+@media (min-width:321px) and (max-width:768px) {
     .Review_subContainer{
         display: flex;
         flex-direction: column;

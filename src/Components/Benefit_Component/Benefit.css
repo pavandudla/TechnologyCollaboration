@@ -60,4 +60,50 @@
         width: 100%;
         box-sizing: border-box;
     }
+    .Benefit_Container h1{
+        font-family: 'Rubik';
+        font-weight: 300;
+        font-size: 20px;
+    }
+    
+   
+}
+@media (max-width:320px){
+    .Benefit_Container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        margin-top: 0;
+    }
+    .Benefit_Container h1{
+        font-family: 'Rubik';
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .Benefit_Container h2{
+        font-family: 'Rubik';
+        
+        font-size: 10px;
+    }
+    .Benefit_Container img{
+        width: 10rem;
+    }
+    .Benifit_image{
+        gap:1rem;
+        
+    }
+    .Benifit_image img{
+        width:40%;
+    }
+    .Benifit_image h3{
+        font-size: 15px;
+    }
+    .Benifit_img_container{
+        padding-top: 0;
+        gap:3rem;
+
+    }
 }

@@ -24,7 +24,23 @@
 }
 
 
-
+@media (max-width:320px) {
+    .expert_mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* Leave space around the divs */
+        width:100%;
+        box-sizing: border-box;
+        padding-bottom: 3rem;
+        padding-left:0 ;
+        
+    }
+    .expert_subContainer .description{
+        font-family: 'Rubik';
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
+}
 @media (max-width:768px) {
     .expert_mainContainer{
         display: flex;

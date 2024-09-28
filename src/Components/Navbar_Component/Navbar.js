@@ -192,7 +192,7 @@ const closeNavbar = () => {
                 
                 <ul className='smallscreen_unorderlist'>
                     <li ><Link to='/' onClick={closeNavbar}>Home</Link></li>
-                    <li>production</li>
+                    
                     <li>
                         <div className="dropdown-label">
                             <div>Services</div>
