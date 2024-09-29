@@ -211,14 +211,19 @@ a:hover {
     background-color:white;
     font-family: 'Rubik';
 }
-@media (max-width:768px) {
+@media (min-width:321px) and (max-width:426px) {
     .python_subContainer{
         display: flex;
         flex-direction: column;
+        justify-items: baseline;
         box-sizing: border-box;
+        padding: 0px;
+        /* border: 1px solid black; */
+        
+        
     }
     .python_subContainer img{
-        width: 100%;
+        max-width:100%;
         height: 100%;
     }
     .python_subContainer .overview {
@@ -227,16 +232,16 @@ a:hover {
         gap: 2rem;
         background-color: #ece9f9;
         color: #333;
-        width: 100%;
-        max-width: 70rem; /* Adjust the maximum width */
+        /* width: 100%; */
+        max-width:100%; /* Adjust the maximum width */
         padding: 2rem;
-        padding-left: 1rem; /* Reduce left padding */
-        padding-right: 1rem; /* Reduce right padding */
+        padding-left: 2rem; /* Reduce left padding */
+        padding-right: 2rem; /* Reduce right padding */
         /* border: 1px solid black; */
         box-sizing: border-box;
         justify-content: center;
         font-family: 'Rubik';
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 200;
         font-style: normal;
         letter-spacing: 0.8px;
@@ -265,11 +270,20 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: baseline;
+        box-sizing: border-box;
     }
     .instructor img{
         width:60%;
     }
     .instructor_content{
-        width: 100%;
+        max-width: 20rem;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .instructor_content h4{
+        max-width: 20rem;
+    }
+    .instructor_content p{
+        max-width: 20rem;
     }
 }

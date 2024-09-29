@@ -4,7 +4,7 @@
     align-items: center;
     margin-top: 2rem;
     margin-left: 10rem;
-    height:100vh;
+    height:30rem;
 }
 .It h1{
     font-size:2rem;
@@ -44,7 +44,7 @@
         margin-left: 0;
         padding-bottom:0;
         margin-bottom: 0;
-        height:70vh;
+        max-height:23rem;
     }
     .It h1 {
         font-size: 1.5rem; /* Smaller font size for the heading */
@@ -57,7 +57,7 @@
     }
 
     .video-background {
-        height: 450px; /* Adjust height of the video background */
+        height: 520px; /* Adjust height of the video background */
         width: 100%;
     }
 
@@ -77,7 +77,7 @@
         margin-left: 0;
         padding-bottom:0;
         margin-bottom: 0;
-        height:80vh;
+        height:200%;
     }
     .It h1 {
         font-family: 'Rubik';

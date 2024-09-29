@@ -201,8 +201,10 @@ figure{
  
 
 
-@media (max-width:768px){
-   
+@media (min-width:321px) and (max-width:426px){
+   .navbar_maincontainer{
+    background-color: blue;
+   }
     .navbar-toggler{
         visibility: visible;  
     }
