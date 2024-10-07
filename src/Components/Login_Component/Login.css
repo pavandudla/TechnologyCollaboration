@@ -78,6 +78,7 @@
   .login-container h2{
     font-family: 'Rubik';
     font-weight: 300;
+    text-align: center;
   }
   
   /* Login form styling */

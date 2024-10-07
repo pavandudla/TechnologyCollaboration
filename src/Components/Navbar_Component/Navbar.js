@@ -178,7 +178,7 @@ const closeNavbar = () => {
     return (
         <div className='navbar_maincontainer'>
           <div className='smallscreen'>
-            <img src={Logo} width={200} alt="Logo" />
+            <Link to="/"><img src={Logo} width={200} alt="Logo" /></Link>
             <IoReorderThree className="navbar-Threetoggler" onClick={toggleNavbar} size={35}/>
           </div>
          
@@ -186,7 +186,7 @@ const closeNavbar = () => {
           {isNavbarVisible &&
             (<div className='Navbar_Container' >
                 <div className='toggler_icon'>
-                    <img src={Logo} width={200} alt="Logo" />
+                    <Link to="/"><img src={Logo} width={200} alt="Logo" /></Link>
                     <RxCross2 className="navbar-Crosstoggler" onClick={toggleNavbar} size={25}/>
                 </div>
                 
@@ -196,7 +196,7 @@ const closeNavbar = () => {
                     <li>
                         <div className="dropdown-label">
                             <div>Services</div>
-                            <IoIosArrowDown size={20} />
+                            <IoIosArrowDown size={20} className='dropdown_icon'/>
                             <ul className="dropdown-menu">
                                 <li className="dropdown-item">
                                     <Link to="/training" onClick={closeNavbar}>Training</Link>
@@ -207,8 +207,8 @@ const closeNavbar = () => {
                             </ul>
                         </div>
                     </li>
-                    <li ><Link onClick={closeNavbar}>About us</Link></li>
-                    <li ><Link onClick={closeNavbar}>Contact us</Link></li> 
+                    <li ><Link to="/counter"onClick={closeNavbar}>About us</Link></li>
+                    <li ><Link to="/contactus" onClick={closeNavbar}>Contact us</Link></li> 
                     <li className='loginbtn'><Link to='/login' onClick={closeNavbar}>Login/Register</Link></li>
                 </ul>
             </div>)}

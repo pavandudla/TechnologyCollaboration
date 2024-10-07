@@ -142,5 +142,39 @@
    
 }
 
+@media (min-width:1441px) and (max-width:2560px) {
+    .main_container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10rem 3rem;
+        
+    }
+    .Footer_container {
+        display: flex;
+        align-content:center;
+        gap:24rem;
+        font-size: 2rem;
+    }
+    .Findus_container p{
+        color: white;
+        font-size:17px;
+        font-weight: bold;
+        border-bottom: 1px solid orange;
+        width:100%;
+        padding-bottom: 1rem;
+        font-family: 'Rubik';
+        font-size: 3rem;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    .footer_description{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+}
+
 
 

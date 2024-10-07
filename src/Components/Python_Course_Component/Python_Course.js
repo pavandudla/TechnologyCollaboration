@@ -26,11 +26,10 @@ const Python=()=>{
             <div className='python_mainContainer_img'>
               <h2>Single Course</h2> 
               <h5>Home / <span className='python_span'>Python Course</span></h5>
-            </div>  
-               
+            </div>       
         </div>
          <div className='python_subContainer'>
-            <h2>Leading the way with life learning</h2>
+            <h2 className='python_subContainer_heading'>Leading the way with life learning</h2>
             <img src={pythonLanguage_img} width={800} height={400}/>
             <div className='overview'>
                 <h4 onClick={showOverview} className={activeSection === 'overview' ? 'active-tab' : ''}>Overview</h4>
@@ -40,12 +39,12 @@ const Python=()=>{
             <div className="content">
                   {activeSection === 'overview' && (
                     <div className='overview_maincontainer'>
-                      <div>
-                              <h2>Course Description</h2>
+                      <div className='overview_description'>
+                              <h2 className='course-heading'>Course Description</h2>
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
                       </div>
-                      <div>
-                              <h2>Certification Online</h2>
+                      <div className='overview_description'>
+                              <h2 className='course-heading'>Certification Online</h2>
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
                       </div>
                     </div>
@@ -53,35 +52,113 @@ const Python=()=>{
 
                   {activeSection === 'curriculum' && (
                     <div className='curriculum_maincontainer'>
-                      <h2>Python Curriculum</h2>
+                      <h2 className='curriculum_maincontainer-heading'>Python Curriculum</h2>
                       <div className='playbtn_container'>
-                        <h3>Section 1</h3>
+                        <h3>Introduction to python bascis</h3>
                         <div className='playbtn_subcontainer'>
                           <LuPlay className='play_btn'/>
-                          Introduction
+                          Introduction to python,Installation,Setup
                         </div>
                         <div className='playbtn_subcontainer1'>
                           <LuPlay className='play_btn'/>
-                          Environment Setup
+                          Basic Syntax, Variables, and Data Types
                         </div>
                         <div className='playbtn_subcontainer'>
                           <LuPlay className='play_btn'/>
-                          Quiz one
+                          Operators, Expressions, and Control Flow (if-else, loops)
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Data Structures (Lists, Tuples, Dictionaries, Sets)
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Functions, Modules, and Packages
                         </div>
                       </div>
                       <div className='playbtn_container'>
-                        <h3>Section 2</h3>
+                        <h3>Intermediate Python Concepts</h3>
                         <div className='playbtn_subcontainer'>
                           <LuPlay className='play_btn'/>
-                          Introduction
+                          File Handling and Working with File I/O
                         </div>
                         <div className='playbtn_subcontainer1'>
                           <LuPlay className='play_btn'/>
-                          Environment Setup
+                          Exception Handling and Debugging Techniques
                         </div>
                         <div className='playbtn_subcontainer'>
                           <LuPlay className='play_btn'/>
-                          Quiz one
+                          Object-Oriented Programming (Classes, Objects, Inheritance)
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Working with Libraries (Standard Library and Third-party Libraries)
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Introduction to NumPy and Pandas for Data Manipulation
+                        </div>
+
+
+                        <h3>Advanced Python Topics</h3>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Advanced NumPy and Pandas for Data Analysis
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Introduction to Data Visualization with Matplotlib and Seaborn
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Introduction to Machine Learning with scikit-learn
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Web Scraping with BeautifulSoup and Requests
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Introduction to Flask for Web Development
+                        </div>
+
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Working with Databases using SQLite and SQLAlchemy
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Asynchronous Programming with asyncio
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Unit Testing and Test-Driven Development (TDD)
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Introduction to Docker for Python Applications
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Deployment Strategies for Python Applications
+                        </div>
+
+                        <h3 className='playbtn_subcontainer'>Specialized Topics and Projects</h3>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Choose a Specialization (e.g., Data Science, Web Development, DevOps) and dive deeper into related topics
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Work on a Python Project related to your chosen specialization
+                        </div>
+                        <div className='playbtn_subcontainer1'>
+                          <LuPlay className='play_btn'/>
+                          Code Review and Refactoring of Project Code
+                        </div>
+                        <div className='playbtn_subcontainer'>
+                          <LuPlay className='play_btn'/>
+                          Finalize Project Documentation and Present your Project
                         </div>
                       </div>
                     </div>
@@ -91,8 +168,8 @@ const Python=()=>{
                     <div className='instructor'>
                       <img src={Babai} width={250}/>
                       <div className='instructor_content'>
-                        <div>
-                          <h2>Ashok Dhudla</h2>
+                        <div className='instructor_content_div'>
+                          <h2 className='instructor_content_heading'>Ashok Dhudla</h2>
                           <p>Python Developer (10+ years of experience)</p>
                         </div>
                         <div>

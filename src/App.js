@@ -27,6 +27,8 @@ import Odoo from './Components/Odoo_Component/Odoo.js';
 import ScrollToTop from './Components/Scrolltop/ScrollTop.js';
 import Login from './Components/Login_Component/Login.js';
 import Signup from './Components/Signup_Component/Signup.js';
+import ContactUs from './Components/Contact US/Contact_us.js';
+import CounterSection from './Components/experience/experience.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -45,6 +47,8 @@ function App() {
         <Route path="/odoo" element={<Odoo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='/counter' element={<CounterSection/>}/>
       </Routes>
       <Footer />
     </Router>

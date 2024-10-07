@@ -74,26 +74,67 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(false);
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+
+    if (value === "") {
+      setEmailError("Email can't be empty");
+    } 
+     else {
+      setEmailError(""); // Clear error message when email is valid
+    }
+  };
+
+
+
+  const handlePasswordChange = (e) => {
+    const value = e.target.value;
+    setPassword(value);
+
+    if (value === "") {
+      setPasswordError("Password can't be empty");
+    } else {
+      setPasswordError(""); // Clear error message when password is not empty
+    }
+  };
+
 
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrorMessage('');
 
-    // Simple validation
-    if (!email || !password) {
-      setErrorMessage('Please fill in both fields.');
-      return;
+    if (email === "") {
+      setEmailError("Email can't be empty");
     }
 
-    // Add your login logic here (e.g., API call to authenticate user)
-    console.log('Logging in with:', email, password);
+    if (password === "") {
+      setPasswordError("Password can't be empty");
+    }
 
-    // Example: Reset form after successful login
-    setEmail('');
-    setPassword('');
-  };
+   
+  
+
+
+
+// Add your login logic here (e.g., API call to authenticate user)
+console.log('Logging in with:', email, password);
+
+// Example: Reset form after successful login
+setEmail('');
+setPassword('');
+
+};
+
+    
+
+    
+  
 
   return (
     <div className="login-container">
@@ -108,9 +149,11 @@ const Login = () => {
             type="email"
             id="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
+            onChange={handleEmailChange}
+            
           />
+          {emailError && <p style={{ color: "red" }}>{emailError}</p>}
+
         </div>
 
         <div className="form-group">
@@ -119,9 +162,10 @@ const Login = () => {
             type="password"
             id="password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
+            onChange={handlePasswordChange}
+           
           />
+          {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
         </div>
 
         <button type="submit" className="login-button">Login</button>

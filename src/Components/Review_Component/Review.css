@@ -73,3 +73,29 @@
         width: 170px;
     }
 }
+
+@media (min-width:1024px) and (max-width:1441px) {
+    .Review_mainContainer{
+        padding: 6rem 3rem;
+    }
+    .Review_subContainer{
+        display: flex;
+        gap: 10rem;
+    }
+}
+@media (min-width:1441px) and (max-width:2560px) {
+    .review_description img{
+        width: 20rem;
+    }
+    .review_description h3{
+        font-size: 2.5rem;
+    }
+    .review_description .studentEnrolled_img{
+        width: 18.5rem;
+    }
+    .Review_subContainer{
+        display: flex;
+        justify-content: center;
+        gap: 20rem;
+    }
+}

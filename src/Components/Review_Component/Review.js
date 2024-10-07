@@ -14,7 +14,7 @@ const Review=()=>{
                     <h3>Sucess rate</h3>
                 </div>
                 <div className='review_description'>
-                    <img src={fiften} width={140}/>
+                    <img src={fiften} width={140} className='studentEnrolled_img'/>
                     <h3>Students enrolled</h3>
                 </div>
                 <div className='review_description'>

@@ -3,8 +3,8 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2rem;
-    margin-left: 10rem;
-    height:30rem;
+    margin-left: 10rem; 
+    height:30rem; 
 }
 .It h1{
     font-size:2rem;
@@ -15,12 +15,12 @@
 .video-background {
     position: absolute;
     top: 0;
-    left: 0;
-    height:550px;
-    width: 100%;
+    left: 0; 
+    height:550px; 
+     width: 100%;
     overflow: hidden;
     z-index: -1; 
-} 
+}  
 
  #background-video {
     position: absolute;
@@ -99,6 +99,91 @@
     
 }
 
+@media (min-width:1024px) and (max-width:1441px) {
+    .It{
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 0;
+        margin-left: 0;
+        padding-left: 5rem;
+        padding-bottom: 5rem;
+        margin-top:1px;
+        z-index: 1000;
+        max-height:100vh;
+    }
+    .It h1 {
+        font-size: 2.3rem; /* Smaller font size for the heading */
+        width: 45%;
+    }
+
+    .It img {
+        width: 50%; /* Ensure the image takes full width */
+        
+    }
+
+    .video-background {
+        margin-top: -23rem;
+        height: 190vh; /* Adjust height of the video background */
+        width: 100%;
+        /* z-index: 1000; */
+        padding-bottom:15rem;
+        box-sizing: border-box;
+       
+       
+        
+    }
+
+    #background-video {
+        object-fit:cover; /* Ensures the video covers the space appropriately */
+        /* z-index: 1000; */
+    }
+}
+
+@media (min-width:1441px) and (max-width:2560px) {
+    .It{
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 0;
+        margin-left: 0;
+        padding-left: 15rem;
+        padding-bottom: 5rem;
+        margin-top:-100px;
+        z-index: 1000;
+        height: 135vh;
+        box-sizing: border-box;
+    }
+    .It h1 {
+        font-size: 4rem; /* Smaller font size for the heading */
+        width: 40%;
+    }
+
+    .It img {
+        width: 55%; /* Ensure the image takes full width */
+        
+    }
+
+    .video-background {
+        margin-top: -23rem;
+        height: 100vh; /* Adjust height of the video background */
+        width: 100%;
+        /* z-index: 1000; */
+        padding-top: 0;
+        margin-top: -800px;
+        padding-bottom:150rem;
+        box-sizing: border-box;
+       
+       
+        
+    }
+
+    #background-video {
+        object-fit:cover; /* Ensures the video covers the space appropriately */
+        /* z-index: 1000; */
+        box-sizing: border-box;
+    }
+}
 
 
 

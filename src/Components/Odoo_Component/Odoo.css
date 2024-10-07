@@ -5,6 +5,7 @@
     padding: 6rem;
     color:orange;
     /* color: black; */
+    max-height: fit-content;
 }
 
 .python_mainContainer::before {
@@ -14,6 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    
     background-image: url(./../../Media/python_course_img.png);
     background-repeat: no-repeat;
     background-size: cover;

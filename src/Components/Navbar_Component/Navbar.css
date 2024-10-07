@@ -202,9 +202,7 @@ figure{
 
 
 @media (min-width:321px) and (max-width:426px){
-   .navbar_maincontainer{
-    background-color: blue;
-   }
+  
     .navbar-toggler{
         visibility: visible;  
     }
@@ -377,6 +375,37 @@ figure{
     
 }
 
+@media (min-width:1441px) and (max-width:2560px){
+    .Navbar_Container{
+        display: flex;
+        padding: 2rem;
+        
+    }
+    .toggler_icon img{
+        width: 25rem;
+    }
+    .Navbar_Container .smallscreen_unorderlist{
+        display: flex;
+        gap: 3rem;
+    }
+    .Navbar_Container .smallscreen_unorderlist li a{
+        font-size: 2rem;
+    }
+    .Navbar_Container .smallscreen_unorderlist li .dropdown-label{
+        display: flex;
+        gap: 0.5rem;
+        font-size: 2rem;
+    }
+    .Navbar_Container .smallscreen_unorderlist li .dropdown-label .dropdown_icon {
+        width: 40px; /* Adjust the size */
+        height: 40px;
+    }
+    .Navbar_Container .smallscreen_unorderlist .loginbtn a{
+        padding: 1.5rem;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+}
 
 
 
