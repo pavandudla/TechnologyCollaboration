@@ -33,6 +33,12 @@
     transform: translate(-50%, -50%);
     z-index: -1; 
 }  
+@media only screen and (max-width:768px) {
+    .home_maincontainer{
+        width: 100%;
+        
+    }
+}
 /* Media query for 768px screen */
 @media (min-width:321px) and (max-width: 426px) {
     .It{
@@ -140,7 +146,7 @@
     }
 }
 
-@media (min-width:1441px) and (max-width:2560px) {
+@media (min-width:1441px) and (max-width:2561px) {
     .It{
         display: flex;
         margin-top: 6rem;
@@ -188,6 +194,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

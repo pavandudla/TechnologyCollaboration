@@ -14,7 +14,7 @@ const Home=()=>{
         window.scrollTo(0, 0); // Scroll to top when component loads
       }, []);
     return(
-        <div>
+        <div className="home_maincontainer">
             <div className='It'>
                 <h1> Expert IT training when and where you need it.</h1>
                 <img src={ItImage} width={600} />
