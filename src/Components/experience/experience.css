@@ -19,4 +19,21 @@
     margin-top: 10px;
     color: #333;
   }
+  @media (min-width:1440px) and (max-width:2561px) {
+    .counters {
+      display: flex;
+      justify-content: space-around;
+      margin: 120px 0;
+    }
+    .counter {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #ffb607;
+    }
+    .counter-section p {
+      font-size: 1.8rem;
+      margin-top: 10px;
+      color: #333;
+    }
+  }
    

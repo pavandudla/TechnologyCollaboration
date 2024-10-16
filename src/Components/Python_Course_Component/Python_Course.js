@@ -49,7 +49,6 @@ const Python=()=>{
                       </div>
                     </div>
                   )}
-
                   {activeSection === 'curriculum' && (
                     <div className='curriculum_maincontainer'>
                       <h2 className='curriculum_maincontainer-heading'>Python Curriculum</h2>

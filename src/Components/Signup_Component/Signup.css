@@ -21,7 +21,7 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
+    max-width: 480px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -37,14 +37,17 @@
     font-weight: bold;
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 93%;
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    width: 100%;
+    /* max-width: 100%; */
+   
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
   }
   
   /* Sign-up button styling */
@@ -120,3 +123,106 @@
     
   }
 }  
+@media (min-width:1024px) and (max-width:1441px) {
+  /* Sign-up form styling */
+  .signup-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2561px) {
+  /* Container to center the sign-up form */
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  /* margin-top: 5rem; */
+  padding-bottom: 25rem;
+ 
+  
+}
+   /* Sign-up form styling */
+   .signup-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 60rem;
+    width: 100%;
+    padding-bottom: 3rem;
+    margin-top: 7rem;
+   
+    box-sizing: border-box;
+  }
+  .signup-form input[type="text"]
+  {
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 28px;
+      outline: none;
+      box-sizing: border-box;
+  }
+  .signup-form input[type="email"]
+   {
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 28px;
+      outline: none;
+      box-sizing: border-box;
+  }
+  .signup-form input[type="password"]
+  {
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 28px;
+      outline: none;
+      box-sizing: border-box;
+  }
+  /* Sign-up button styling */
+  .signup-button {
+    width: 100%;
+    padding: 25px;
+    /* background-color: #28a745; */
+    background-color:orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+   /* Bottom links for Sign In */
+   .bottom-links {
+    margin-top: 20px;
+    text-align: center;
+   
+  }
+  .bottom-links span{
+    font-size: 28px;
+  }
+  .signin-link {
+    /* color: #007bff; */
+    color: orange;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight:normal;
+    
+  }
+}

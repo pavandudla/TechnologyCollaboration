@@ -5,6 +5,7 @@ import django_img from './../../Media/django_image.jpg';
 import { useState } from 'react';
 import Babai from './../../Media/babai.png'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { LuPlay } from "react-icons/lu";
 
 
 
@@ -28,9 +29,9 @@ const Django=()=>{
                
         </div>
          <div className='python_subContainer'>
-            <h2>Leading the way with life learning</h2>
+            <h2 className='python_subContainer_heading2'>Leading the way with life learning</h2>
             <img src={django_img} width={800} height={400}/>
-            <div className='overview'>
+            <div className='django_overview'>
                 <h4 onClick={showOverview}>Overview</h4>
                 <h4 onClick={showCurriculum}>Circulum</h4>
                 <h4 onClick={showInstructor}>Instructor</h4>
@@ -51,17 +52,146 @@ const Django=()=>{
         )}
 
         {activeSection === 'curriculum' && (
-          <div>
-            <h2>Curriculum</h2>
-            <p>This is the curriculum section.</p>
+          <div className='django_curriculum_maincontainer'>
+          <h2 className='curriculum_maincontainer-heading'>Django Curriculum</h2>
+          <div className='playbtn_container'>
+            <h3>Introduction to Django Basics</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Basic understanding of web development
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Overview of Django framework
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Install Python and Django.
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Create a virtual environment
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Set up a new Django project
+            </div>
           </div>
+          <div className='playbtn_container'>
+            <h3>Intermediate Django Concepts</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Understand models and database design
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Create models and perform basic database operations
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Explore and customise the Django admin
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Learn about views and URL patterns
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Create basic views for your application
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Understand Django template language.
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Build templates for your views
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Learn how to work with forms in Django
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Implement user authentication and authorization
+            </div>
+
+            <h3>Advanced Django Topics</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Explore class-based views and their advantages
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Understand and implement middleware
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Learn about signals for decoupled applications
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Learn the basics of building APIs with Django REST Framework
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Create RESTful APIs using Django REST Framework
+            </div>
+
+           
+
+            <h3 className='playbtn_subcontainer1'>Specialized Topics and Projects</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Develop a small to medium-sized project using Django
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Implement features like user authentication, CRUD operations, and API endpoints
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Understand and write tests for your Django application
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Explore deployment options (e.g., Heroku, AWS, or Digital Ocean)
+            </div>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Deploy your Django project to a live server
+            </div>
+
+
+            <h3 className='playbtn_subcontainer1'>Optimization and Security</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Optimise your Django application for better performance
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Learn and implement security best practices in Django
+            </div>
+
+
+            <h3 className='playbtn_subcontainer1'>Review and Advanced Topics</h3>
+            <div className='playbtn_subcontainer'>
+              <LuPlay className='play_btn'/>
+              Review the concepts learned
+            </div>
+            <div className='playbtn_subcontainer1'>
+              <LuPlay className='play_btn'/>
+              Explore advanced Django features or related technologies
+            </div>
+          </div>
+        </div>
         )}
 
 {activeSection === 'instructor' && (
           <div className='instructor'>
             <img src={Babai} width={250}/>
             <div className='instructor_content'>
-              <div>
+              <div className='django_instructor_content_below'>
                 <h2>Ashok Dhudla</h2>
                 <p>Django Developer (10+ years of experience)</p>
               </div>

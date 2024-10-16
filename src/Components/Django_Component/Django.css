@@ -82,3 +82,52 @@
 .django_span{
     color: orange;
 }
+
+    
+
+.django_curriculum_maincontainer{
+    border: 1px solid #bebebe;
+    width:50rem ;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.django_curriculum_maincontainer .curriculum_maincontainer-heading{
+    padding: 2rem;
+    border-bottom: 1px solid #bebebe;
+}
+
+@media (min-width:1440px) and (max-width:2561px) {
+    .django_curriculum_maincontainer{
+        border: 1px solid #bebebe;
+        width:91rem ;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    .django_curriculum_maincontainer .curriculum_maincontainer-heading{
+        padding: 3rem;
+        border-bottom: 1px solid #bebebe;
+        font-size: 3rem;
+    }
+    .playbtn_container h3{
+        padding: 3rem;
+    }
+    .instructor_content .django_instructor_content_below h2{
+        font-size: 2.3rem;
+        padding-bottom: 2rem;
+    }
+    .django_overview{
+        background-color:  #ece9f9;
+        padding: 3rem;
+        display: flex;
+        gap: 6rem;
+        width: 85rem;
+        justify-content:center;
+        font-size: 2rem;
+    }
+    .python_subContainer .python_subContainer_heading2{
+        font-size: 3rem;
+    }
+}
