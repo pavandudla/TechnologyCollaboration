@@ -82,3 +82,75 @@
 .pythonfullstack_span{
     color: orange;
 }
+
+
+.Pythonfullstack_curriculum_container {
+    border: 1px solid #ccc;
+    width: 78%;
+    font-size: 1.2rem; 
+    box-sizing: border-box;
+   
+}
+.fullstack_playbtn_container{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fae6fd;
+    font-family: 'Rubik';
+    font-size: 1rem;
+}
+.fullstack_playbtn_container1{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+    padding: 1rem;
+    background-color:white;
+    font-family: 'Rubik';
+    font-size: 1rem;
+}
+/* Adjust font size and padding using relative units like vw and rem */
+.Pythonfullstack_curriculum_container h2{
+    padding: 1.5rem; 
+    font-size: 2rem; 
+    border-top: 1px solid #ccc;
+}
+.Pythonfullstack_curriculum_container h3 {
+    padding: 1rem; 
+    font-size: 1.5rem; 
+    border-top: 1px solid #ccc;
+}
+
+
+
+/* Media query for larger screens (e.g., desktops) */
+@media (min-width: 1200px) {
+    .Pythonfullstack_curriculum_container {
+        font-size: 1.4rem; 
+    }
+    
+    .Pythonfullstack_curriculum_container h2 {
+        font-size: 3rem; 
+    }
+    .Pythonfullstack_curriculum_container h3 {
+        font-size: 1.5rem; 
+    }
+    .fullstack_playbtn_container,.fullstack_playbtn_container1{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .Pythonfullstack_curriculum_container {
+        width: 90%; 
+        font-size: 1rem; 
+        
+    }
+    
+    .Pythonfullstack_curriculum_container h2, .Pythonfullstack_curriculum_container h3 {
+        font-size: 1.5rem; 
+    }
+}
+

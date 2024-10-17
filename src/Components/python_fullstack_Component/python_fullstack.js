@@ -4,6 +4,7 @@ import pythonfullstack_img from './../../Media/pythonfullstack_image.jpg'
 import { useState } from 'react';
 import Babai from './../../Media/babai.png'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { LuPlay } from "react-icons/lu";
 
 
 const Python_fullstack=()=>{
@@ -49,10 +50,211 @@ const Python_fullstack=()=>{
         )}
 
         {activeSection === 'curriculum' && (
-          <div>
-            <h2>Curriculum</h2>
-            <p>This is the curriculum section.</p>
-          </div>
+          <><div className='Pythonfullstack_curriculum_container'>
+                <h2>FullStack Curriculum</h2>
+                <h3>Python Circulum</h3>
+                <h3>Introduction to python bascis</h3>
+                <div className='fullstack_playbtn_container'>
+                  <LuPlay className='play_btn' />
+                  Introduction to python,Installation,Setup
+                </div>
+                <div className='fullstack_playbtn_container1'>
+                  <LuPlay className='play_btn' />
+                  Basic Syntax, Variables, and Data Types
+                </div>
+                <div className='fullstack_playbtn_container'>
+                  <LuPlay className='play_btn' />
+                  Operators, Expressions, and Control Flow (if-else, loops)
+                </div>
+                <div className='fullstack_playbtn_container1'>
+                  <LuPlay className='play_btn' />
+                  Data Structures (Lists, Tuples, Dictionaries, Sets)
+                </div>
+                <div className='fullstack_playbtn_container'>
+                  <LuPlay className='play_btn' />
+                  Functions, Modules, and Packages
+                </div>
+              
+                  <h3>Intermediate Python Concepts</h3>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    File Handling and Working with File I/O
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Exception Handling and Debugging Techniques
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Object-Oriented Programming (Classes, Objects, Inheritance)
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Working with Libraries (Standard Library and Third-party Libraries)
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Introduction to NumPy and Pandas for Data Manipulation
+                  </div>
+
+
+                  <h3>Advanced Python Topics</h3>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Advanced NumPy and Pandas for Data Analysis
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Introduction to Data Visualization with Matplotlib and Seaborn
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Introduction to Machine Learning with scikit-learn
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Web Scraping with BeautifulSoup and Requests
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Introduction to Flask for Web Development
+                  </div>
+
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Working with Databases using SQLite and SQLAlchemy
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Asynchronous Programming with asyncio
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Unit Testing and Test-Driven Development (TDD)
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Introduction to Docker for Python Applications
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Deployment Strategies for Python Applications
+                  </div>
+
+                  <h3 >Specialized Topics and Projects</h3>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Choose a Specialization (e.g., Data Science, Web Development, DevOps) and dive deeper into related topics
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Work on a Python Project related to your chosen specialization
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn' />
+                    Code Review and Refactoring of Project Code
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn' />
+                    Finalize Project Documentation and Present your Project
+                  </div>
+                  <h2>Javascript Curriculum</h2>
+                  <h3>Javascript Basics</h3>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    What is javascript and its features
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Variables in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Data types in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Operators and control statements
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Loops in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Data structure
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Scope in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Objects in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Functions in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Form validations in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Dom manipulation in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Events in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Bom elements in javascript
+                  </div>
+                  <h3>Advanced Topics in Javascript</h3>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Prototyping in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Proto type inheritance in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Callbacks in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    IIFE(Immediately invoked function execution)
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Promises in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Ajax in Javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Async await in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Closures in Javascript
+                  </div>
+                  <div className='fullstack_playbtn_container'>
+                    <LuPlay className='play_btn'/>
+                    Oops concepts in javascript
+                  </div>
+                  <div className='fullstack_playbtn_container1'>
+                    <LuPlay className='play_btn'/>
+                    Json in Javascript
+                  </div>
+                  </div>
+                </>
         )}
 
 {activeSection === 'instructor' && (
