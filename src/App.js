@@ -50,7 +50,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='/counter' element={<CounterSection/>}/>
-        <Route path='/forgotPassword' element={<ForgotPassword/>}/>
+        <Route path='/forgotpassword' element={<ForgotPassword/>}/>
       </Routes>
       <Footer />
     </Router>
