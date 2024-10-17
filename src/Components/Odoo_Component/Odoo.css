@@ -84,7 +84,7 @@
 .odoo_span{
     color: orange;
 }
-.odoo_curriculum_container{
+/* .odoo_curriculum_container{
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -120,7 +120,41 @@
     background-color:white;
     font-family: 'Rubik';
     box-sizing: border-box;
+} */
+
+.odoo_curriculum_container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    /*width: 80vw;  Adjust width relative to viewport */
+    width: 100%;
+    max-width: 90rem; /* Keep a maximum width for smaller screens */
+    box-sizing: border-box;
+    flex-grow: 1;
 }
+
+.odoo_curriculum_container h2, .odoo_curriculum_container h3 {
+    border-bottom: 1px solid #ccc;
+    padding: 2vw; /* Use viewport width for padding */
+    box-sizing: border-box;
+}
+
+.odoo_playbtn_container, .odoo_playbtn_container1 {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5vw; /* Use viewport width for padding */
+    background-color: #fae6fd;
+    font-family: 'Rubik';
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/* For odoo_playbtn_container1 (with white background) */
+.odoo_playbtn_container1 {
+    background-color: white;
+}
+/* 
 @media only screen and (max-width:2560px) {
     .odoo_curriculum_container{
         display: flex;
@@ -161,4 +195,4 @@
         font-family: 'Rubik';
         box-sizing: border-box;
     }
-}
+} */

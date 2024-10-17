@@ -171,7 +171,7 @@ setPassword('');
         <button type="submit" className="login-button">Login</button>
 
         <div className="bottom-links">
-          <Link to="/forgot-password" className="forgot-password">
+          <Link to="/forgot_password" className="forgot-password">
             Forgot Password?
           </Link>
           <span> | </span>

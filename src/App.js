@@ -29,6 +29,7 @@ import Login from './Components/Login_Component/Login.js';
 import Signup from './Components/Signup_Component/Signup.js';
 import ContactUs from './Components/Contact US/Contact_us.js';
 import CounterSection from './Components/experience/experience.js';
+import ForgotPassword from './Components/Forgot_password/Forgot_password.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='/counter' element={<CounterSection/>}/>
+        <Route path='/forgot_password' element={<ForgotPassword/>}/>
       </Routes>
       <Footer />
     </Router>
