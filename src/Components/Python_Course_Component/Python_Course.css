@@ -175,26 +175,52 @@ a:hover {
 }
 .curriculum_maincontainer{
     border: 1px solid #bebebe;
-    max-width: 50rem;
+    width: 50rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 .curriculum_maincontainer h2{
      padding: 2rem; 
-     border-bottom: 1px solid rgb(190, 190, 190);
+     /* border-bottom: 1px solid rgb(190, 190, 190); */
 }
 .play_btn{
     color: orange;
 }
-/* .playbtn_container{
-    border-top: 1px solid #bebebe;
-} */
+
 .playbtn_container h3{
     padding: 1.7rem;
     font-family: 'Rubik';
     font-weight:300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
 }
+.python_plus_btn,.python_minus_btn{
+    color: orange;
+}
+
+/* .python_basics {
+    overflow: hidden;
+    max-height: 600px;
+    opacity: 1;
+    transition: max-height 30s ease-out, opacity 0.5s ease-out;
+    transition: 20s;
+  }
+.python_basics1 {
+    overflow: hidden;
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 30s ease-out, opacity 0.5s ease-out;
+  } */
+  
+ 
+  
+
+ 
 .playbtn_subcontainer{
     display: flex;
     gap:0.5rem;
@@ -202,6 +228,8 @@ a:hover {
     padding: 1.5rem;
     background-color: #fae6fd;
     font-family: 'Rubik';
+
+   
 }
 .playbtn_subcontainer1{
     display: flex;

@@ -7,12 +7,21 @@ import { useState } from 'react';
 import Babai from './../../Media/babai.png'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { LuPlay } from "react-icons/lu";
+import { FaPlus } from "react-icons/fa";
+import { TiMinus } from "react-icons/ti";
 
 
 
 const Python=()=>{
 
+
+ 
+
     const [activeSection, setActiveSection] = useState('overview');
+    const [python_basic_minusShow,setPython_basic_minusShow]=useState(false)
+    const [python_intermediate_minusShow,setPython_intermediate_minusShow]=useState(false)
+    const [python_advanced_minusShow,setPython_advanced_minusShow]=useState(false)
+    const [python_specialized_minusShow,setPython_specialized_minusShow]=useState(false)
 
     // Handlers for setting the active section
     const showOverview = () => setActiveSection('overview');
@@ -20,6 +29,19 @@ const Python=()=>{
     const showInstructor = () => setActiveSection('instructor');
     const showReview = () => setActiveSection('review');
 
+
+    const python_basic_plus_minus_Onclick=()=>{
+      setPython_basic_minusShow(!python_basic_minusShow)
+    }
+    const python_intermediate_plus_minus_Onclick=()=>{
+      setPython_intermediate_minusShow(!python_intermediate_minusShow)
+    }
+    const python_advanced_plus_minus_Onclick=()=>{
+      setPython_advanced_minusShow(!python_advanced_minusShow)
+    }
+    const python_specialized_plus_minus_Onclick=()=>{
+      setPython_specialized_minusShow(!python_specialized_minusShow)
+    }
     return(
     <>
         <div className='python_mainContainer'>
@@ -53,112 +75,149 @@ const Python=()=>{
                     <div className='curriculum_maincontainer'>
                       <h2 className='curriculum_maincontainer-heading'>Python Curriculum</h2>
                       <div className='playbtn_container'>
-                        <h3>Introduction to python bascis</h3>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to python,Installation,Setup
+                            {python_basic_minusShow ?
+                              (<div >
+                                <h3>Introduction to python bascis <TiMinus onClick={python_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                                <div className="python_basics" >
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn' />
+                                  Introduction to python,Installation,Setup
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn' />
+                                  Basic Syntax, Variables, and Data Types
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn' />
+                                  Operators, Expressions, and Control Flow (if-else, loops)
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn' />
+                                  Data Structures (Lists, Tuples, Dictionaries, Sets)
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn' />
+                                  Functions, Modules, and Packages
+                                </div>
+                                </div>
+                              </div>)
+                              :
+                              (<h3>Introduction to python bascis <FaPlus  onClick={python_basic_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
+                            }
                         </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Basic Syntax, Variables, and Data Types
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Operators, Expressions, and Control Flow (if-else, loops)
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Data Structures (Lists, Tuples, Dictionaries, Sets)
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Functions, Modules, and Packages
-                        </div>
-                      </div>
+
+
+
+
+
+
+
+
                       <div className='playbtn_container'>
-                        <h3>Intermediate Python Concepts</h3>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          File Handling and Working with File I/O
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Exception Handling and Debugging Techniques
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Object-Oriented Programming (Classes, Objects, Inheritance)
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Working with Libraries (Standard Library and Third-party Libraries)
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to NumPy and Pandas for Data Manipulation
-                        </div>
+                        {python_intermediate_minusShow ?
+                            (<>
+                            <h3>Intermediate python concepts <TiMinus onClick={python_intermediate_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                            <div className='playbtn_subcontainer'>
+                              <LuPlay className='play_btn'/>
+                              File Handling and Working with File I/O
+                            </div>
+                            <div className='playbtn_subcontainer1'>
+                              <LuPlay className='play_btn'/>
+                              Exception Handling and Debugging Techniques
+                            </div>
+                            <div className='playbtn_subcontainer'>
+                              <LuPlay className='play_btn'/>
+                              Object-Oriented Programming (Classes, Objects, Inheritance)
+                            </div>
+                            <div className='playbtn_subcontainer1'>
+                              <LuPlay className='play_btn'/>
+                              Working with Libraries (Standard Library and Third-party Libraries)
+                            </div>
+                            <div className='playbtn_subcontainer'>
+                              <LuPlay className='play_btn'/>
+                              Introduction to NumPy and Pandas for Data Manipulation
+                            </div>
+                            </>)
+                            :
+                            (<h3>Intermediate python concepts <FaPlus  onClick={python_intermediate_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
+                        }
+                      </div>
 
+                      <div className='playbtn_container'>
+                          {python_advanced_minusShow?
+                            (<>
+                                <h3>Advanced python concepts <TiMinus onClick={python_advanced_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Advanced NumPy and Pandas for Data Analysis
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Introduction to Data Visualization with Matplotlib and Seaborn
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Introduction to Machine Learning with scikit-learn
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Web Scraping with BeautifulSoup and Requests
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Introduction to Flask for Web Development
+                                </div>
 
-                        <h3>Advanced Python Topics</h3>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Advanced NumPy and Pandas for Data Analysis
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to Data Visualization with Matplotlib and Seaborn
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to Machine Learning with scikit-learn
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Web Scraping with BeautifulSoup and Requests
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to Flask for Web Development
-                        </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Working with Databases using SQLite and SQLAlchemy
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Asynchronous Programming with asyncio
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Unit Testing and Test-Driven Development (TDD)
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Introduction to Docker for Python Applications
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Deployment Strategies for Python Applications
+                                </div>
+                            </>)
+                            :
+                            (<h3>Advanced python concepts <FaPlus  onClick={python_advanced_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
+                          }
+                      </div>  
 
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Working with Databases using SQLite and SQLAlchemy
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Asynchronous Programming with asyncio
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Unit Testing and Test-Driven Development (TDD)
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Introduction to Docker for Python Applications
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Deployment Strategies for Python Applications
-                        </div>
-
-                        <h3 className='playbtn_subcontainer'>Specialized Topics and Projects</h3>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Choose a Specialization (e.g., Data Science, Web Development, DevOps) and dive deeper into related topics
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Work on a Python Project related to your chosen specialization
-                        </div>
-                        <div className='playbtn_subcontainer1'>
-                          <LuPlay className='play_btn'/>
-                          Code Review and Refactoring of Project Code
-                        </div>
-                        <div className='playbtn_subcontainer'>
-                          <LuPlay className='play_btn'/>
-                          Finalize Project Documentation and Present your Project
-                        </div>
+                      <div className='playbtn_container'> 
+                        {python_specialized_minusShow ?  
+                          (<>
+                              <h3>Specialized Topics and Projects <TiMinus onClick={python_specialized_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Choose a Specialization (e.g., Data Science, Web Development, DevOps) and dive deeper into related topics
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Work on a Python Project related to your chosen specialization
+                                </div>
+                                <div className='playbtn_subcontainer1'>
+                                  <LuPlay className='play_btn'/>
+                                  Code Review and Refactoring of Project Code
+                                </div>
+                                <div className='playbtn_subcontainer'>
+                                  <LuPlay className='play_btn'/>
+                                  Finalize Project Documentation and Present your Project
+                                </div>
+                          </>)
+                          :
+                          (<h3>Specialized Topics and Projects <FaPlus  onClick={python_specialized_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
+                        }
                       </div>
                     </div>
                   )}
