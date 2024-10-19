@@ -127,6 +127,9 @@
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .python_subContainer .python_subContainer_heading2{
+        font-size: 2vw;
+    }
     .django_curriculum_maincontainer{
         border: 1px solid #bebebe;
         width:91rem ;
@@ -147,16 +150,39 @@
         font-size: 2.3rem;
         padding-bottom: 2rem;
     }
-    .django_overview{
-        background-color:  #ece9f9;
-        padding: 3rem;
-        display: flex;
-        gap: 6rem;
-        width: 85rem;
-        justify-content:center;
-        font-size: 2rem;
-    }
-    .python_subContainer .python_subContainer_heading2{
-        font-size: 3rem;
-    }
+   
+     .django_overview{
+        font-size: 1.6vw;
+        padding: 2vw;
+        width: 100%;
+        max-width: 62.5vw;
+        gap: 5vw;
+        font-family: "Rubik";
+        margin-top: 1.5vw;
+        box-sizing: border-box;
+     }
+     .django_overview h4::after {
+        bottom: -2vw;
+        border-bottom: 4px solid orange;
+     }
+     .content .overview_maincontainer{
+        margin-top: 1.5vw;
+     }
+     .content .overview_maincontainer h2{
+        font-size: 1.7vw;
+        margin-top: 1vw;
+     }
+     .content .overview_maincontainer p{
+        font-size: 1.2vw;
+        width: 62.5vw;
+        line-height: 2.2vw;
+        margin-top: 1vw;
+     }
+     .django_curriculum_maincontainer{
+        width: 62.5vw;
+     }
+     .django_curriculum_maincontainer .curriculum_maincontainer-heading{
+        border-bottom: none;
+     }
+  
 }

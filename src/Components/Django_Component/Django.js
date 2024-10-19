@@ -59,7 +59,7 @@ const Django=()=>{
             <img src={django_img} width={800} height={400}/>
             <div className='django_overview'>
                 <h4 onClick={showOverview} className={activeSection === 'overview' ? 'active-tab' : ''}>Overview</h4>
-                <h4 onClick={showCurriculum} className={activeSection === 'curriculum' ? 'active-tab' : ''}>Circulum</h4>
+                <h4 onClick={showCurriculum} className={activeSection === 'curriculum' ? 'active-tab' : ''}>Curriculum</h4>
                 <h4 onClick={showInstructor} className={activeSection === 'instructor' ? 'active-tab' : ''}>Instructor</h4>
               
             </div>
@@ -79,10 +79,10 @@ const Django=()=>{
 
         {activeSection === 'curriculum' && (
           <div className='django_curriculum_maincontainer'>
-          <h2 className='curriculum_maincontainer-heading'>Django Curriculum</h2>
-          <div className='playbtn_container'>
-          {django_basic_minusShow ?
-            (<>
+            <h2 className='curriculum_maincontainer-heading'>Django Curriculum</h2>
+            <div className='playbtn_container'>
+            {django_basic_minusShow ?
+              (<>
                       <h3>Introduction to Django bascis <TiMinus onClick={django_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
                       <div className='playbtn_subcontainer'>
                         <LuPlay className='play_btn' />
