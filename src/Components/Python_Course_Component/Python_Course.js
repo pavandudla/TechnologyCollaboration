@@ -105,14 +105,6 @@ const Python=()=>{
                               (<h3>Introduction to python bascis <FaPlus  onClick={python_basic_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
                             }
                         </div>
-
-
-
-
-
-
-
-
                       <div className='playbtn_container'>
                         {python_intermediate_minusShow ?
                             (<>

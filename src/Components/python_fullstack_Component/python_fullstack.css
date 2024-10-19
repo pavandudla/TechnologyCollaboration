@@ -86,12 +86,12 @@
 
 .Pythonfullstack_curriculum_container {
     border: 1px solid #ccc;
-    width: 78%;
+    width: 50rem;
     font-size: 1.2rem; 
     box-sizing: border-box;
    
 }
-.fullstack_playbtn_container{
+.fullstackplaybtn_subcontainer{
     display: flex;
     gap:0.5rem;
     align-items: center;
@@ -100,7 +100,7 @@
     font-family: 'Rubik';
     font-size: 1rem;
 }
-.fullstack_playbtn_container1{
+.fullstackplaybtn_subcontainer1{
     display: flex;
     gap:0.5rem;
     align-items: center;
@@ -120,11 +120,24 @@
     font-size: 1.5rem; 
     border-top: 1px solid #ccc;
 }
+.Pythonfullstack_curriculum_container h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: 'Rubik';
+    font-weight: 300;
+    
+}
+.socialmedia .icons{
+    width: 2rem;
+    height: 2rem;
+}
 
 
 
 /* Media query for larger screens (e.g., desktops) */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .Pythonfullstack_curriculum_container {
         font-size: 1.4rem; 
     }
@@ -139,7 +152,7 @@
         font-size: 1rem;
         padding: 1.5rem;
     }
-}
+} */
 
 /* Media query for smaller screens (e.g., mobile) */
 @media (max-width: 768px) {

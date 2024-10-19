@@ -6,17 +6,37 @@ import { useState } from 'react';
 import Babai from './../../Media/babai.png'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { LuPlay } from "react-icons/lu";
+import { FaPlus } from "react-icons/fa";
+import { TiMinus } from "react-icons/ti";
 
 
 const Odoo=()=>{
 
     const [activeSection, setActiveSection] = useState('overview');
+    const [odoo_basic_minusShow,setOdoo_basic_minusShow]=useState(false)
+    const [odoo_advanced_minusShow,setOdoo_advanced_minusShow]=useState(false)
+    const [odoo_optimization_minusShow,setOdoo_optimization_minusShow]=useState(false)
+    const [odoo_projects_minusShow,setOdoo_projects_minusShow]=useState(false)
 
     // Handlers for setting the active section
     const showOverview = () => setActiveSection('overview');
     const showCurriculum = () => setActiveSection('curriculum');
     const showInstructor = () => setActiveSection('instructor');
     const showReview = () => setActiveSection('review');
+
+    const odoo_basic_plus_minus_Onclick=()=>{
+      setOdoo_basic_minusShow(!odoo_basic_minusShow)
+    }
+   
+    const odoo_advanced_plus_minus_Onclick=()=>{
+      setOdoo_advanced_minusShow(!odoo_advanced_minusShow)
+    }
+    const odoo_optimization_plus_minus_Onclick=()=>{
+      setOdoo_optimization_minusShow(!odoo_optimization_minusShow)
+    }
+    const odoo_projects_plus_minus_Onclick=()=>{
+      setOdoo_projects_minusShow(!odoo_projects_minusShow)
+    }
 
     return(
     <>
@@ -31,9 +51,9 @@ const Odoo=()=>{
             <h2>Leading the way with life learning</h2>
             <img src={odoo_img} width={800} height={400} style={{border:"0.5px solid #bebebe"}}/>
             <div className='overview'>
-                <h4 onClick={showOverview}>Overview</h4>
-                <h4 onClick={showCurriculum}>Circulum</h4>
-                <h4 onClick={showInstructor}>Instructor</h4>
+                <h4 onClick={showOverview} className={activeSection=="overview"?"active-tab":""}>Overview</h4>
+                <h4 onClick={showCurriculum} className={activeSection=="curriculum"?"active-tab":""}>Circulum</h4>
+                <h4 onClick={showInstructor} className={activeSection=="instructor"?"active-tab":""}>Instructor</h4>
                
             </div>
             <div className="content">
@@ -53,53 +73,81 @@ const Odoo=()=>{
         {activeSection === 'curriculum' && (
           <div className='odoo_curriculum_container'>
             <h2>Odoo Curriculum</h2>
-            <h3>Introduction to Odoo and Basic Concepts</h3>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Overview of ERP and Odoo</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo installation and setup</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Tour of the Odoo interface</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Setting up a new database</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Configuring basic company settings</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Configuring basic company settings</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Managing user roles and access rights</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Understanding data models in Odoo</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Creating simple models and fields</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Basic ORM operations (create, read, write, delete)</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Introduction to different view types (form, tree, kanban)</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating and customising views</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced UI features: widgets, buttons, and filters</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating and customising views</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced UI features: widgets, buttons, and filters</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo Reports</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Customizing Menus and Actions</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo Security</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>User Authentication</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating a Basic Module</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/> Odoo Workflows</div>
-            <h3>Advanced Module Development</h3>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Building advanced views with inheritance</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Customising existing widgets</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Creating new widgets</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Advanced ORM queries</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>API decorators and best practices</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Using external APIs in Odoo</div>
-            <h3>Performance Optimization and Best Practices</h3>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Identifying performance bottlenecks</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Caching strategies</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Database indexing and optimization</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Using version control (e.g., Git) with Odoo</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Collaborative development practices</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Code reviews and documentation</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Testing and Debugging</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Writing and running tests in Odoo</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Debugging techniques</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Profiling and analysing code performance</div>
-            <h3>Advanced Topics and Project Work</h3>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced server actions and cron jobs</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Integrating external libraries</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Mobile development with Odoo</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Participants work on a comprehensive project</div>
-            <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Review and discussion of project outcomes</div>
-            <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Q&A session and final assessments</div>
+            {odoo_basic_minusShow ?
+                (<div >
+                  <h3>Introduction to Odoo and Basic Concepts <TiMinus onClick={odoo_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Overview of ERP and Odoo</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo installation and setup</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Tour of the Odoo interface</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Setting up a new database</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Configuring basic company settings</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Configuring basic company settings</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Managing user roles and access rights</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Understanding data models in Odoo</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Creating simple models and fields</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Basic ORM operations (create, read, write, delete)</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Introduction to different view types (form, tree, kanban)</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating and customising views</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced UI features: widgets, buttons, and filters</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating and customising views</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced UI features: widgets, buttons, and filters</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo Reports</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Customizing Menus and Actions</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Odoo Security</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>User Authentication</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/>Creating a Basic Module</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/> Odoo Workflows</div>
+                </div>)
+                :
+                (<h3>Introduction to Odoo and Basic Concepts <FaPlus onClick={odoo_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>)
+              }
+
+         
+            {odoo_advanced_minusShow ?
+                (<div > 
+                  <h3>Advanced Module Development<TiMinus onClick={odoo_advanced_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Building advanced views with inheritance</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Customising existing widgets</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Creating new widgets</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Advanced ORM queries</div>
+                  <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>API decorators and best practices</div>
+                  <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Using external APIs in Odoo</div>
+                  </div>)
+                  :
+                  (<h3>Advanced Module Development<FaPlus onClick={odoo_advanced_plus_minus_Onclick} className='python_minus_btn' /></h3>)
+                }
+
+                {odoo_optimization_minusShow ?
+                  (<div > 
+                    <h3>Performance Optimization and Best Practices<TiMinus onClick={odoo_optimization_plus_minus_Onclick} className='python_minus_btn' /></h3>   
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Identifying performance bottlenecks</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Caching strategies</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Database indexing and optimization</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Using version control (e.g., Git) with Odoo</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Collaborative development practices</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Code reviews and documentation</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Testing and Debugging</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Writing and running tests in Odoo</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Debugging techniques</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Profiling and analysing code performance</div>
+                    </div>)
+                  :
+                  (<h3>Performance Optimization and Best Practices<FaPlus onClick={odoo_optimization_plus_minus_Onclick} className='python_minus_btn' /></h3>)
+                }
+
+                {odoo_projects_minusShow ?
+                  (<div > 
+                    <h3>Advanced Topics and Project Work<TiMinus onClick={odoo_projects_plus_minus_Onclick} className='python_minus_btn' /></h3> 
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Advanced server actions and cron jobs</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Integrating external libraries</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Mobile development with Odoo</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Participants work on a comprehensive project</div>
+                    <div className='odoo_playbtn_container'><LuPlay className='play_btn'/>Review and discussion of project outcomes</div>
+                    <div className='odoo_playbtn_container1'><LuPlay className='play_btn'/> Q&A session and final assessments</div>
+                  </div>)
+                  :
+                  (<h3>Advanced Topics and Project Work<FaPlus onClick={odoo_projects_plus_minus_Onclick} className='python_minus_btn' /></h3>)
+                }
           </div>
         )}
 

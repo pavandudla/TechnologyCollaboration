@@ -83,7 +83,36 @@
     color: orange;
 }
 
-    
+.django_overview{
+    background-color: #ece9f9;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 50rem;
+}  
+.django_overview h4::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Start from the middle */
+    bottom: -1.5rem;
+    width: 0; /* Initially, no width */
+    border-bottom: 2px solid orange;
+    transition: width 0.5s ease, left 0.5s ease; /* Smooth transition */
+}
+
+.django_overview h4:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0; /* Adjust the starting point */
+}
+.django_overview h4{
+    cursor: pointer;
+    position: relative;
+}
+.django_overview .active-tab{
+    color: #ffb607; 
+}
 
 .django_curriculum_maincontainer{
     border: 1px solid #bebebe;
@@ -94,7 +123,7 @@
 }
 .django_curriculum_maincontainer .curriculum_maincontainer-heading{
     padding: 2rem;
-    border-bottom: 1px solid #bebebe;
+    /* border-bottom: 1px solid #bebebe; */
 }
 
 @media (min-width:1441px) and (max-width:2561px) {
