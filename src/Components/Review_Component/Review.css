@@ -83,7 +83,7 @@
         gap: 10rem;
     }
 }
-@media (min-width:1441px) and (max-width:2560px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
     .review_description img{
         width: 20rem;
     }

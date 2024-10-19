@@ -101,7 +101,7 @@
     }
 }
 
-@media (min-width:1441px) and (max-width:2560px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
     .expert_mainContainer{
         display: flex;
         gap: 14rem;
