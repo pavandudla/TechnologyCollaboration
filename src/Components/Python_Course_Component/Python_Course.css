@@ -316,7 +316,7 @@ a:hover {
     }
 }
 
-@media (min-width:1024px) and (max-width:1441px) {
+@media (min-width:1024px) and (max-width:1440px) {
     .python_mainContainer_img{
         display: flex;
         flex-direction: column;
@@ -337,7 +337,7 @@ a:hover {
         font-size: 1.3rem;
     }
 }
-@media (min-width:1441px) and (max-width:2560px) {
+@media (min-width:1440px) and (max-width:2560px) {
     .python_mainContainer .python_mainContainer::before {
         content: '';
         position: absolute;
@@ -372,35 +372,38 @@ a:hover {
         font-family: 'Rubik';
         font-weight: 400;
     }
-    .python_subContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        margin-top: 2rem;
-        
-    }
     .python_subContainer .python_subContainer_heading{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     .python_subContainer img{
-        width: 60%;
-        height: 50%;
+        width: 100rem;
+        height: 45rem;
     }
     .python_subContainer .overview{
-        width: 60%;
+        width: 100rem;
         padding: 3rem;
-        font-size: 40px;
+        font-size: 2.4rem;
+        gap: 8rem;
+        margin-top: 3rem;
     }
-    .content .overview_maincontainer{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+    .overview h4::after {
+        bottom: -3rem;
+        border-bottom: 4px solid orange;
     }
+    .content .overview_maincontainer .overview_description{
+       margin-top: 3rem;
+    } 
+    .content .overview_maincontainer .overview_description p{
+        width: 100rem;
+        margin-top:1rem;
+        font-size: 1.7rem;
+     } 
     .python_subContainer .content .curriculum_maincontainer{
-    max-width: 100%;
-    width: 91rem;
+    width: 100%;
+    max-width: 100rem;
     box-sizing: border-box;
     font-size: 2rem;
+    margin-top: 3rem;
     
    }
    .python_subContainer .content .curriculum_maincontainer h2{
@@ -408,18 +411,22 @@ a:hover {
     padding: 3rem;
    }
    .python_subContainer .content .curriculum_maincontainer h3{
-    font-size: 3rem;
+    font-size: 2.7rem;
     padding: 3rem;
    }
-   .playbtn_container .play_btn{
+   .playbtn_subcontainer, .playbtn_subcontainer1{
+    gap: 2rem;
     padding: 2rem;
    }
+   .playbtn_container .play_btn{
+    width: 2rem;
+    height: 2rem;
+   }
    .instructor{
-        display: flex;
-        align-items:center;
+        margin-top:3rem;
         gap: 3rem;
         box-sizing: border-box;
-    }
+    } 
     .instructor_content{
         max-width: 50rem;
         font-size: 24px;
@@ -448,16 +455,17 @@ a:hover {
         font-size: 2rem;
     }
     .instructor img{
-        width:30%;
+        width:35rem;
+        height: 35rem;
     }
     .socialmedia{
         display: flex;
         gap: 5rem;
         margin-top: 3rem;
     }
-    .socialmedia .icons{
-        width: 3rem;
-        height: 3rem;
+    .instructor_content .socialmedia .icons{
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .overview_maincontainer .overview_description .course-heading{
         text-align:left;

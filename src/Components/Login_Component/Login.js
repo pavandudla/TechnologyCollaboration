@@ -152,7 +152,7 @@ setPassword('');
             onChange={handleEmailChange}
             
           />
-          {emailError && <p style={{ color: "red" }}>{emailError}</p>}
+          {emailError && <p className='error'>{emailError}</p>}
 
         </div>
 
@@ -165,7 +165,7 @@ setPassword('');
             onChange={handlePasswordChange}
            
           />
-          {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
+          {passwordError && <p className='error'>{passwordError}</p>}
         </div>
 
         <button type="submit" className="login-button">Login</button>

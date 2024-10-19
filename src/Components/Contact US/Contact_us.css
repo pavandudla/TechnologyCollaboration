@@ -99,7 +99,7 @@
         font-size: 12px;
     }
   }
-  @media (min-width:1024px) and (max-width:1441px) {
+  @media (min-width:1024px) and (max-width:1440px) {
     .contact-container{
       width: 100%;
       margin-top: 4rem;
@@ -131,62 +131,47 @@
         font-size: 16px;
     }
   }
-  @media (min-width:1441px) and (max-width:2561px) {
+  @media (min-width:1440px) and (max-width:2560px) {
     .contact-container{
-      width: 100%;
-      max-width: 70rem;
-      margin-top: 8rem;
-      max-height: 75rem;
-      padding: 4rem;
-      padding-bottom: 12rem;
+          width:60rem;
+          height:100%;
+          max-height: 75rem;
+          margin-top:10rem;
+          padding: 4rem;
+          box-sizing: border-box;
+    }
+    .contact-container h2{
+      font-size: 3rem;
       box-sizing: border-box;
     }
-    h2 {
-      font-size: 4rem;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      font-size: 25px;
-      padding: 30px;
-      width: 100%;
-      border-radius: 15px;
-    }
-  
-    .submit-btn {
+   
+    .contact-container .form-group label{
       font-size: 2rem;
-      padding: 30px;
-      margin-top: 9rem;
-      border-radius: 15px;
+      margin-bottom: 1rem;
       box-sizing: border-box;
     }
-  
-    .form-group {
-      margin-bottom: 10px;
+    .contact-container .form-group input{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding: 1.4rem;
+      border-radius: 0.8rem;
       box-sizing: border-box;
-      max-height: 10rem;
+
     }
-    .form-group label {
-        font-size: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+    .contact-container .form-group textarea{
+          height: 10rem;
+          font-size: 2rem;
+          box-sizing: border-box;
     }
-     /* Error Styling */
-    .error {
-      color: red;
-      font-size: 25px;
-      margin-top: 5px;
-     
-     
+    .submit-btn{
+          font-size: 2.5rem;
+          padding: 2rem;
+          border-radius: 0.8rem;
+          margin-top: 1rem;
+          box-sizing: border-box;
     }
-    
-    .input-error {
-      border-color: red;
-    }
-    textarea {
-      resize: none;
-      height: 200px;
-      
+    .error{
+      font-size: 1.4rem;
+      box-sizing: border-box;
     }
   }

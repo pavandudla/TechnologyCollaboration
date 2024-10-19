@@ -1,130 +1,73 @@
-/* Container to center the sign-up form */
-.signup-container {
-    display: flex;
-    flex-wrap: wrap;
+.signup-container{
+  display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:fit-content;
     background-color: #f4f4f9;
-    /* margin-top: 5rem; */
-    padding-bottom: 5rem;
-    padding: 3rem;
-    
-  }
-  .signup-container h2{
-    text-align: center;
-  }
+}
+.signup-container .signup-form{
+  background-color: white;
+  padding: 2rem;
+  margin: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 30rem;
+  width: 100%;
   
-  /* Sign-up form styling */
-  .signup-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 480px;
-    width: 100%;
+}
+.signup-form h2{
+  font-size: 2rem;
+  text-align: center;
+}
+.signup-form .form-group label{
+    font-size: 1rem;
     box-sizing: border-box;
-  }
-  
-  /* Form group styling */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .signup-form input[type="text"],
-  .signup-form input[type="email"],
-  .signup-form input[type="password"] {
-    width: 100%;
-    /* max-width: 100%; */
-   
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+}
+.signup-form .form-group input{
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius:0.5rem;
     box-sizing: border-box;
-  }
-  
-  /* Sign-up button styling */
-  .signup-button {
-    width: 100%;
-    padding: 10px;
-    /* background-color: #28a745; */
-    background-color:orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .signup-button:hover {
-    /* background-color: #218838; */
-    background-color: orange;
-  }
-  
-  /* Error message styling */
-  .error-message {
-    color: red;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight:normal;
-    
-  }
-  
-  /* Bottom links for Sign In */
-  .bottom-links {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .signin-link {
-    /* color: #007bff; */
-    color: orange;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .signin-link:hover {
-    text-decoration: underline;
-    color: orange;
-  }
+}
+.signup-button{
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+.bottom-links {
+  margin-top: 20px;
+  text-align: center;
+}
 
+.signin-link {
+ 
+  color: orange;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-
-
-  .signup-form input {
-    border: 1px solid #ccc; /* Default border color */
-    padding: 10px;
-    border-radius: 4px;
-  }
-  
-  .signup-form input:focus {
-    outline:none; /* Remove default outline on focus */
-  }
-  
-  .error-message {
-    color: red; /* Error message color */
-  }
-  
-  
+.signin-link:hover {
+  text-decoration: underline;
+  color: orange;
+}
+.error-message{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 @media (max-width:768px) {
   .signup-container {
-    /* padding: 10rem 2rem; */
     padding: 0;
-    margin-top: 0;
-   
-    
+    margin-top: 0; 
   }
 }  
-@media (min-width:1024px) and (max-width:1441px) {
-  /* Sign-up form styling */
+/* @media (min-width:1024px) and (max-width:1440px) {
+  
   .signup-form {
     background-color: white;
     padding: 40px;
@@ -134,95 +77,47 @@
     width: 100%;
     box-sizing: border-box;
   }
-}
-@media (min-width: 1441px) and (max-width: 2561px) {
-  /* Container to center the sign-up form */
-.signup-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f9;
-  /* margin-top: 5rem; */
-  padding-bottom: 25rem;
- 
-  
-}
+} */
+@media (min-width: 1440px) and (max-width: 2560px) {
    /* Sign-up form styling */
-   .signup-form {
+  
+   .signup-container .signup-form {
     background-color: white;
-    padding: 40px;
+    padding: 4rem;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
     max-width: 60rem;
-    width: 100%;
-    padding-bottom: 3rem;
-    margin-top: 7rem;
-   
+    height: 100%; 
+    max-height:fit-content; 
+    margin-top: 9rem;
     box-sizing: border-box;
+    
+    
   }
-  .signup-form input[type="text"]
-  {
-      padding: 30px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 28px;
-      outline: none;
+  .signup-form h2{
+    font-size: 3rem;
+  }
+  .signup-form .form-group label{
+      font-size: 2rem;
       box-sizing: border-box;
   }
-  .signup-form input[type="email"]
-   {
-      padding: 30px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 28px;
-      outline: none;
+  .signup-form .form-group input{
+      font-size: 2rem;
+      padding: 1.5rem;
+      border-radius:0.8rem;
       box-sizing: border-box;
   }
-  .signup-form input[type="password"]
-  {
-      padding: 30px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 28px;
-      outline: none;
-      box-sizing: border-box;
-  }
-  /* Sign-up button styling */
-  .signup-button {
-    width: 100%;
-    padding: 25px;
-    /* background-color: #28a745; */
-    background-color:orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 32px;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
-   /* Bottom links for Sign In */
-   .bottom-links {
-    margin-top: 20px;
-    text-align: center;
-   
+  .signup-button{
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
   }
   .bottom-links span{
-    font-size: 28px;
+    font-size: 1.7rem;
   }
-  .signin-link {
-    /* color: #007bff; */
-    color: orange;
-    text-decoration: none;
-    font-size: 28px;
-  }
-  /* Error message styling */
-  .error-message {
-    color: red;
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight:normal;
-    
+  .signin-link{
+    font-size: 1.7rem;
   }
 }

@@ -222,8 +222,8 @@ const validateSignUp = () => {
             style={{ borderColor: isConfirmPasswordInvalid ? 'red' : '' }}
            
           />
-         
-        </div>
+          </div>
+      
 
         <button type="submit" className="signup-button">Sign Up</button>
 
@@ -233,7 +233,8 @@ const validateSignUp = () => {
             Sign In
           </Link>
         </div>
-      </form>
+     
+    </form>
     </div>
   );
 };

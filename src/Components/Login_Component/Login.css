@@ -1,78 +1,11 @@
 /* Container to center the login form */
-/* .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-  } */
-  
-  /* Login form styling */
-  /* .login-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  } */
-  
-  /* Form group styling */
-  /* .form-group {
-    margin-bottom: 20px;
-  } */
-  
-  /* label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: left;
-  } */
-  
-  /* input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px; */
-    /* border: 1px solid #ccc; */
-    /* border: 1px solid orange;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-  }
-   */
-  /* Login button styling */
-  /* .login-button {
-    width: 100%;
-    padding: 10px; */
-    /* background-color: #007bff; */
-    /* background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  } */
-  
-  /* .login-button:hover { */
-    /* background-color: #0056b3; */
-    /* background-color: orange;
-  } */
-  
-  /* Error message styling */
-  /* .error-message {
-    color: red;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: bold;
-  } */
-  
-
-/* Container to center the login form */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:100%;
+    max-height: fit-content;
+    padding: 5rem;
     background-color: #f4f4f9;
   }
   .login-container h2{
@@ -84,11 +17,14 @@
   /* Login form styling */
   .login-form {
     background-color: white;
-    padding: 40px;
+    padding:1rem 3rem ;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    height: 100%;
+    max-height: fit-content;
+    max-width: 30rem;
     width: 100%;
+    box-sizing: border-box;
   }
   
   /* Form group styling */
@@ -139,11 +75,11 @@
   }
   
   /* Error message styling */
-  .error-message {
+  .error {
     color: red;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: bold;
+    /* margin-bottom: 20px; */
+    font-size:2rem;
+    
   }
   
   /* Bottom links for Forgot Password and Sign Up */
@@ -179,85 +115,55 @@
     }
   }
 
-@media (min-width:1441px) and (max-width:2561px) {
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-    box-sizing: border-box;
-   
-  }
+@media (min-width:1440px) and (max-width:2560px) {
   .login-form {
     background-color: white;
-    padding: 40px;
+    padding: 4rem;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 60rem;
+    width:100%;
+    max-width: 65rem;
     height: 100%;
-    max-height: 43rem;
-    margin-top: 3rem;
+    max-height:fit-content;
+    margin-top: 5rem;
     box-sizing: border-box;
    
   }
-  /* Form group styling */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    font-family: 'Rubik';
-    font-weight: 300;
-
-  }
-  
-  .login-form input[type="email"],
-  .login-form input[type="password"] {
-    width: 100%;
-    padding: 30px;  /* Consistent padding */
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    font-size: 16px;  /* Ensure font-size consistency */
-    outline: none;
-    box-sizing: border-box;  /* Include padding and borders in the width/height */
+  .login-form h2{
+    font-size: 4rem;
   }
  
-
-
   
+  .login-form .form-group label {
+   font-size: 2rem;
+
+  }
+  .login-form .form-group input{
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+  }
   /* Login button styling */
   .login-button {
     width: 100%;
-    padding: 2rem;
-    /* background-color: #007bff; */
+    padding: 1.5rem;
     background-color: orange;
     color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 28px;
+    border-radius:0.8rem;
+    font-size:2.5rem;
     cursor: pointer;
-    font-family: 'Rubik';
-    font-weight: 300;
     margin-top: 1rem;
     box-sizing: border-box;
   }
-  
   .login-button:hover {
-    /* background-color: #0056b3; */
     background-color: orange;
   }
   
   /* Error message styling */
-  .error-message {
+  .form-group .error{
     color: red;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-bottom:0;
+    font-size:2rem;
   }
   
   /* Bottom links for Forgot Password and Sign Up */
