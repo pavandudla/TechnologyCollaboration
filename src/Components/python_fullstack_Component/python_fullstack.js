@@ -47,25 +47,25 @@ const Python_fullstack=()=>{
 
     return(
     <>
-        <div className='python_mainContainer'>
-            <div className='python_mainContainer_img'>
+        <div className='fullstack_mainContainer'>
+            <div className='fullstack_mainContainer_img'>
               <h2>Single Course</h2> 
-              <h5>Home / <span className='pythonfullstack_span'>Python fullstack course</span></h5>
+              <h5>Home / <span className='fullstack_span'>Python fullstack course</span></h5>
             </div>  
                
         </div>
-         <div className='python_subContainer'>
+         <div className='fullstack_subContainer'>
             <h2>Leading the way with life learning</h2>
             <img src={pythonfullstack_img} width={800} height={400}/>
-            <div className='overview'>
+            <div className='fullstack_overview'>
                 <h4 onClick={showOverview} className={activeSection=="overview"?"active-tab":""}>Overview</h4>
-                <h4 onClick={showCurriculum} className={activeSection=="curriculum"?"active-tab":""}>Circulum</h4>
+                <h4 onClick={showCurriculum} className={activeSection=="curriculum"?"active-tab":""}>Curriculum</h4>
                 <h4 onClick={showInstructor} className={activeSection=="instructor"?"active-tab":""}>Instructor</h4>
                 
             </div>
-            <div className="content">
+            <div className="fullstack_content">
         {activeSection === 'overview' && (
-          <div className='overview_maincontainer'>
+          <div className='fullstack_overview_maincontainer'>
             <div>
                     <h2>Course Description</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
@@ -78,14 +78,14 @@ const Python_fullstack=()=>{
         )}
 
         {activeSection === 'curriculum' && (
-          <><div className='Pythonfullstack_curriculum_container'>
+          <><div className='fullstack_curriculum_container'>
                 <h2>FullStack Curriculum</h2>
-                <h2 className='curriculum_maincontainer-heading'>Python Curriculum</h2>
+                <h2 className='fullstackcurriculum_maincontainer-heading'>Python Curriculum</h2>
                       <div className='fullstackplaybtn_container'>
                             {pythonfullstack_basic_minusShow ?
                               (<div >
                                 <h3>Introduction to python bascis <TiMinus onClick={pythonfullstack_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
-                                <div className="python_basics" >
+                                <div className="fullstack_basics" >
                                 <div className='fullstackplaybtn_subcontainer'>
                                   <LuPlay className='play_btn' />
                                   Introduction to python,Installation,Setup
@@ -222,9 +222,11 @@ const Python_fullstack=()=>{
 
 
                   <h2>Javascript Curriculum</h2>
+                  <div className='fullstack_javascript_container'> 
                   {pythonfullstack_javascript_basic_minusShow ?
-                      (<div className='fullstack_javascript_container'>
-                        <h3>Javascript Basics <TiMinus onClick={pythonfullstack_javascript_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
+                    
+                      (<div>
+                        <h3>Javascript Basics <TiMinus onClick={pythonfullstack_javascript_basic_plus_minus_Onclick} className='fullstack_minus_btn' /></h3>
                         <div className='fullstackplaybtn_subcontainer'>
                           <LuPlay className='play_btn'/>
                           What is javascript and its features
@@ -279,12 +281,14 @@ const Python_fullstack=()=>{
                         </div>
                         </div>)
                           :
-                          (<h3>Javascript Basics <FaPlus  onClick={pythonfullstack_javascript_basic_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
-                        }
-
+                          (<h3>Javascript Basics <FaPlus  onClick={pythonfullstack_javascript_basic_plus_minus_Onclick}  className='fullstack_plus_btn'/></h3>)
+                          }
+                       </div>
+                       <div className='fullstack_javascript_container'>     
                       {pythonfullstack_javascript_advanced_minusShow ?
+                       
                         (<div >
-                          <h3>Advanced Topics in Javascript <TiMinus onClick={pythonfullstack_javascript_advanced_plus_minus_Onclick} className='python_minus_btn' /></h3>      
+                          <h3>Advanced Topics in Javascript <TiMinus onClick={pythonfullstack_javascript_advanced_plus_minus_Onclick} className='fullstack_minus_btn' /></h3>      
                           <div className='fullstackplaybtn_subcontainer'>
                             <LuPlay className='play_btn'/>
                             Prototyping in javascript
@@ -327,16 +331,18 @@ const Python_fullstack=()=>{
                           </div>
                           </div>)
                           :
-                          (<h3>Advanced Topics in Javascript <FaPlus  onClick={pythonfullstack_javascript_advanced_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
+                          (<h3>Advanced Topics in Javascript <FaPlus  onClick={pythonfullstack_javascript_advanced_plus_minus_Onclick}  className='fullstack_plus_btn'/></h3>)
                         }
-                  </div>
+                        </div>
+                        </div>
+               
                 </>
         )}
 
 {activeSection === 'instructor' && (
-          <div className='instructor'>
+          <div className='fullstackinstructor'>
             <img src={Babai} width={250}/>
-            <div className='instructor_content'>
+            <div className='fullstackinstructor_content'>
               <div>
                 <h2>Ashok Dhudla</h2>
                 <p>Python fullstack Developer (10+ years of experience)</p>
@@ -344,26 +350,26 @@ const Python_fullstack=()=>{
               <div> 
                 <h4>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</h4>
               </div>
-              <div className='socialmedia'>
+              <div className='fullstacksocialmedia'>
                 <div >
                   <a  href="https://www.facebook.com/Ashokdhudla" target="_blank" rel="noreferrer">
-                      <FaFacebookF size={20} className='icons' />
+                      <FaFacebookF size={20} className='fullstackicons' />
                       
                   </a>
                 </div>  
                 <div>
                   <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                    <FaTwitter size={20} className='icons'/>
+                    <FaTwitter size={20} className='fullstackicons'/>
                   </a>
                 </div> 
                 <div>
                   <a href="https://www.instagram.com/ashokdhudla/" target="_blank" rel="noreferrer">
-                    <FaInstagram size={20} className='icons'/>
+                    <FaInstagram size={20} className='fullstackicons'/>
                   </a>
                 </div>
                 <div>
                   <a href="https://www.linkedin.com/in/ashok-dhudla-96a11358/?originalSubdomain=in" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={20} className='icons'/>
+                    <FaLinkedin size={20} className='fullstackicons'/>
                   </a>
                   
                 </div>

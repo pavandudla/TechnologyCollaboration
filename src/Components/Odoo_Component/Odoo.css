@@ -128,15 +128,12 @@
 }
 .odoo_instructor img{
     width: 20vw;
-    border-radius: 15px;
-   
+    height: 20vw;
     box-shadow: 2px 2px 10px orange;
-
     border: 3px solid white;
-    border-top: 5px solid white;
-    border-left: 5px solid white;
-    border-radius: 15px;
-    box-shadow: 2px 2px  10px orange;
+   
+    border-radius: 1vw;
+    
     
 }
 .odoo_instructor_content{
@@ -185,5 +182,16 @@
     }
     .odoo_curriculum_container .odoo_playbtn_container,.odoo_playbtn_container1{
         font-size: 1vw;
+    }
+    .odoo_instructor img{
+        width: 20vw;
+        height: 20vw;
+        box-shadow: 2px 2px 10px orange;
+        border: 3px solid white;
+        border-radius: 1vw;
+    }
+    .odoo_socialmedia .odoo_icons{
+        width: 2.5vw;
+        height: 2.5vw;
     }
 }
