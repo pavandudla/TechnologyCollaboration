@@ -118,41 +118,41 @@
   @media screen and (min-width: 1440px) and (max-width: 2560px) {
   .login-form {
     background-color: white;
-    padding: 4rem;
-    border-radius: 20px;
+    padding: 3vw;
+    border-radius:1.5vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width:100%;
-    max-width: 65rem;
+    max-width: 40vw;
     height: 100%;
     max-height:fit-content;
-    margin-top: 5rem;
+    margin-top: 4vw;
     box-sizing: border-box;
    
   }
   .login-form h2{
-    font-size: 4rem;
+    font-size: 2vw;
   }
  
   
   .login-form .form-group label {
-   font-size: 2rem;
+   font-size: 1.3vw;
 
   }
   .login-form .form-group input{
-    font-size: 2rem;
-    padding: 1.5rem;
-    border-radius: 0.8rem;
+    font-size: 1.3vw;
+    padding: 1vw;
+    border-radius: 0.8vw;
   }
   /* Login button styling */
   .login-button {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1vw;
     background-color: orange;
     color: white;
-    border-radius:0.8rem;
-    font-size:2.5rem;
+    border-radius:0.8vw;
+    font-size:1.5vw;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1vw;
     box-sizing: border-box;
   }
   .login-button:hover {
@@ -163,12 +163,12 @@
   .form-group .error{
     color: red;
     margin-bottom:0;
-    font-size:2rem;
+    font-size:1.1vw;
   }
   
   /* Bottom links for Forgot Password and Sign Up */
   .bottom-links {
-    margin-top: 20px;
+    margin-top: 2vw;
     text-align: center;
   }
   
@@ -177,7 +177,7 @@
     /* color: #007bff; */
     color: orange;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1vw;
     font-family: 'Rubik';
     font-weight: 200;
   }
@@ -190,7 +190,7 @@
   
   .bottom-links span {
     color: #999;
-    font-size: 14px;
+    font-size:1vw;
   }
 }
   

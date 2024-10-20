@@ -377,7 +377,7 @@ figure{
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
-    .Navbar_Container{
+    /* .Navbar_Container{
         display: flex;
         padding: 2rem;
         
@@ -399,13 +399,47 @@ figure{
     }
     .Navbar_Container .smallscreen_unorderlist li .dropdown-label .dropdown_icon {
         width: 40px; /* Adjust the size */
-        height: 40px;
+        /* height: 40px;
     }
     .Navbar_Container .smallscreen_unorderlist .loginbtn a{
         padding: 1.5rem;
         box-sizing: border-box;
         border-radius: 8px;
+    } */ 
+
+    .Navbar_Container{
+        padding: 1.5vw;
+        display: flex;
+        gap: 2vw;
+        width: 100%;
     }
+    .Navbar_Container .toggler_icon img{
+        width: 18vw;
+    }
+    .Navbar_Container .smallscreen_unorderlist{
+        display: flex;
+        gap: 2.3vw;
+    }
+    .Navbar_Container .smallscreen_unorderlist li a{
+        font-size: 1.5vw;
+    }
+    .Navbar_Container .smallscreen_unorderlist .loginbtn a{
+        border-radius: 0.4vw;
+        padding: 1vw;
+    
+    }
+    .dropdown_icon_container{
+        display: flex;
+        align-items:flex-start;
+    }
+    .dropdown-label{
+        font-size: 1.5vw;
+    }
+    .dropdown_icon{
+        width: 2vw;
+        height: 2vw;
+    }
+   
 }
 
 

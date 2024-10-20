@@ -143,27 +143,29 @@
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
     .Benefit_Container{
-        padding: 10rem 0;
+        padding:4vw;
         
     }
     .Benefit_Container h2{
-        font-size: 2rem;
+        font-size: 1vw;
     }
     .Benefit_Container h1{
-        font-size: 4rem;
+        font-size: 2vw;
     }
     .Benefit_Container img{
-        width: 28rem;
+        width: 20vw;
     }
     .Benifit_img_container img{
-        width: 18rem;
+        width: 10vw;
     }
     .Benifit_img_container{
         display: flex;
-        gap: 12rem;
+        gap: 6vw;
         
     }
     .Benifit_image h3{
-        font-size: 2.3rem;
+        font-size: 1.5vw; 
     }
+
+  
 }
