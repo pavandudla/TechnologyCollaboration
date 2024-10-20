@@ -195,10 +195,10 @@ const closeNavbar = () => {
                     
                     <li>
                         <div className="dropdown-label">
-                          <div className='dropdown_icon_container'>
+                          
                             <div>Services</div>
                             <IoIosArrowDown size={20} className='dropdown_icon'/>
-                            </div>
+                           
                             <ul className="dropdown-menu">
                                 <li className="dropdown-item">
                                     <Link to="/training" onClick={closeNavbar}>Training</Link>
