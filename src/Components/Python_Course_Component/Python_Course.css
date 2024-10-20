@@ -130,6 +130,7 @@
     border-left: 5px solid white;
     border-radius: 15px;
     box-shadow: 2px 2px  10px orange;
+    width: 20vw;
 }
 .instructor p{
     color: #5e5c5c;
@@ -203,24 +204,6 @@ a:hover {
     color: orange;
 }
 
-/* .python_basics {
-    overflow: hidden;
-    max-height: 600px;
-    opacity: 1;
-    transition: max-height 30s ease-out, opacity 0.5s ease-out;
-    transition: 20s;
-  }
-.python_basics1 {
-    overflow: hidden;
-    max-height: 200px;
-    opacity: 1;
-    transition: max-height 30s ease-out, opacity 0.5s ease-out;
-  } */
-  
- 
-  
-
- 
 .playbtn_subcontainer{
     display: flex;
     gap:0.5rem;
@@ -301,7 +284,7 @@ a:hover {
         box-sizing: border-box;
     }
     .instructor img{
-        width:60%;
+        width:20vw;
     }
     .instructor_content{
         max-width: 20rem;
@@ -352,10 +335,10 @@ a:hover {
         z-index: 1;
     }
     
-    .python_mainContainer_img {
+    .python_mainContainer .python_mainContainer_img {
         position: relative;
         z-index: 2; /* Ensure the text is above the background image */
-        padding-top: 2rem;
+        padding: 2vw;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -364,100 +347,101 @@ a:hover {
     }
     .python_mainContainer .python_mainContainer_img h2{
         color: #111111;
-        font-size: 50px;
+        font-size: 1.5vw;
     }
     .python_mainContainer .python_mainContainer_img h5{
         color: #111111;
-        font-size: 26px;
+        font-size: 1.5vw;
         font-family: 'Rubik';
         font-weight: 400;
     }
     .python_subContainer .python_subContainer_heading{
-        font-size: 2.5rem;
+        font-size: 2.3vw;
     }
     .python_subContainer img{
-        width: 100rem;
-        height: 45rem;
+        width:63vw;
+        height: 30vw;
     }
     .python_subContainer .overview{
-        width: 100rem;
-        padding: 3rem;
-        font-size: 2.4rem;
-        gap: 8rem;
-        margin-top: 3rem;
+        width:63vw;
+        padding: 2vw;
+        font-size: 1.7vw;
+        gap: 6vw;
+        margin-top: 2vw;
     }
     .overview h4::after {
-        bottom: -3rem;
+        bottom: -2vw;
         border-bottom: 4px solid orange;
     }
     .content .overview_maincontainer .overview_description{
-       margin-top: 3rem;
+       margin-top: 1vw;
     } 
     .content .overview_maincontainer .overview_description p{
-        width: 100rem;
-        margin-top:1rem;
-        font-size: 1.7rem;
+        width: 63vw;
+        margin-top:1vw;
+        font-size: 1vw;
      } 
     .python_subContainer .content .curriculum_maincontainer{
     width: 100%;
-    max-width: 100rem;
+    max-width:63vw;
     box-sizing: border-box;
-    font-size: 2rem;
-    margin-top: 3rem;
+    font-size: 1vw;
+    margin-top: 2vw;
     
    }
    .python_subContainer .content .curriculum_maincontainer h2{
-    font-size: 3rem;
-    padding: 3rem;
+    font-size: 2vw;
+    padding: 2vw;
    }
    .python_subContainer .content .curriculum_maincontainer h3{
-    font-size: 2.7rem;
-    padding: 3rem;
+    font-size: 1.7vw;
+    padding: 2vw;
    }
    .playbtn_subcontainer, .playbtn_subcontainer1{
-    gap: 2rem;
-    padding: 2rem;
+    gap: 0.8vw;
+    padding: 1.5vw;
+    font-size: 1.2vw;
    }
    .playbtn_container .play_btn{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5vw;
+    height: 1.5vw;
    }
    .instructor{
-        margin-top:3rem;
-        gap: 3rem;
+        margin-top:2vw;
+        gap: 2.5vw;
         box-sizing: border-box;
-    } 
-    .instructor_content{
-        max-width: 50rem;
-        font-size: 24px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .instructor_content_div{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .instructor_content_div .instructor_content_heading{
-        font-size: 3rem;
-    }
-    .instructor_content h4{
-        max-width: 50rem;
-        width: 100rem;
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-    .instructor_content p{
-        max-width: 50rem;
-        width: 100rem;
-        font-size: 2rem;
+       width: 67vw;
+        
     }
     .instructor img{
-        width:35rem;
-        height: 35rem;
+        width: 25vw;
+        height: 20vw;
+        
+    } 
+    .instructor_content .instructor_content_div{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
     }
+    .instructor .instructor_content {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+
+    }
+    .instructor_content .instructor_content_div h2{
+        font-size: 2vw;
+    }
+    .instructor_content .instructor_content_div p{
+        font-size: 1.2vw;
+        width: 63vw;
+    }
+    .instructor_content div h4{
+        font-size: 1.2vw;
+        line-height: 2vw;
+        width: 43vw;
+    }
+    
     .socialmedia{
         display: flex;
         gap: 5rem;

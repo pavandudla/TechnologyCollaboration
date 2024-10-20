@@ -195,6 +195,7 @@
      }
      .django_instructor_content_below p{
         font-size: 1.3vw;
+        width: 63vw;
      }
      .instructor_content .django_instructor_content_below h4{
         font-size: 1.3vw;
