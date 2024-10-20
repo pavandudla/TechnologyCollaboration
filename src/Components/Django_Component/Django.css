@@ -130,6 +130,9 @@
     .python_subContainer .python_subContainer_heading2{
         font-size: 2vw;
     }
+    .python_subContainer img{
+        width: 63vw;
+    }
     .django_curriculum_maincontainer{
         border: 1px solid #bebebe;
         width:91rem ;
@@ -155,7 +158,7 @@
         font-size: 1.6vw;
         padding: 2vw;
         width: 100%;
-        max-width: 62.5vw;
+        max-width: 63vw;
         gap: 5vw;
         font-family: "Rubik";
         margin-top: 1.5vw;
@@ -174,15 +177,27 @@
      }
      .content .overview_maincontainer p{
         font-size: 1.2vw;
-        width: 62.5vw;
+        width: 63vw;
         line-height: 2.2vw;
         margin-top: 1vw;
      }
      .django_curriculum_maincontainer{
-        width: 62.5vw;
+        width: 63vw;
      }
      .django_curriculum_maincontainer .curriculum_maincontainer-heading{
         border-bottom: none;
+     }
+     .instructor img{
+        width: 20vw;
+     }
+     .instructor_content .django_instructor_content_below h2{
+        font-size: 2vw;
+     }
+     .django_instructor_content_below p{
+        font-size: 1.3vw;
+     }
+     .instructor_content .django_instructor_content_below h4{
+        font-size: 1.3vw;
      }
   
 }

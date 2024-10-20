@@ -266,7 +266,7 @@ const Django=()=>{
                 <h2>Ashok Dhudla</h2>
                 <p>Django Developer (10+ years of experience)</p>
               </div>
-              <div>
+              <div className='django_instructor_content_below'>
                 <h4>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</h4>
               </div>
               <div className='socialmedia'>

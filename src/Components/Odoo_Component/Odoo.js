@@ -40,19 +40,19 @@ const Odoo=()=>{
 
     return(
     <>
-        <div className='python_mainContainer'>
-            <div className='python_mainContainer_img'>
+        <div className='odoo_mainContainer'>
+            <div className='odoo_mainContainer_img'>
               <h2>Single Course</h2> 
               <h5>Home / <span className='odoo_span'>Odoo Course</span></h5>
             </div>  
                
         </div>
-         <div className='python_subContainer'>
+         <div className='odoo_subContainer'>
             <h2>Leading the way with life learning</h2>
             <img src={odoo_img} width={800} height={400} style={{border:"0.5px solid #bebebe"}}/>
             <div className='overview'>
                 <h4 onClick={showOverview} className={activeSection=="overview"?"active-tab":""}>Overview</h4>
-                <h4 onClick={showCurriculum} className={activeSection=="curriculum"?"active-tab":""}>Circulum</h4>
+                <h4 onClick={showCurriculum} className={activeSection=="curriculum"?"active-tab":""}>Curriculum</h4>
                 <h4 onClick={showInstructor} className={activeSection=="instructor"?"active-tab":""}>Instructor</h4>
                
             </div>
@@ -152,36 +152,36 @@ const Odoo=()=>{
         )}
 
 {activeSection === 'instructor' && (
-          <div className='instructor'>
+          <div className='odoo_instructor'>
             <img src={Babai} width={250}/>
-            <div className='instructor_content'>
+            <div className='odoo_instructor_content'>
               <div>
                 <h2>Ashok Dhudla</h2>
                 <p>Odoo Developer (10+ years of experience)</p>
               </div>
               <div>
-                <h4>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</h4>
+                <p>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</p>
               </div>
-              <div className='socialmedia'>
+              <div className='odoo_socialmedia'>
                 <div >
                   <a  href="https://www.facebook.com/Ashokdhudla" target="_blank" rel="noreferrer">
-                      <FaFacebookF size={20} className='icons' />
+                      <FaFacebookF size={20} className='odoo_icons' />
                       
                   </a>
                 </div>  
                 <div>
                   <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                    <FaTwitter size={20} className='icons'/>
+                    <FaTwitter size={20} className='odoo_icons'/>
                   </a>
                 </div> 
                 <div>
                   <a href="https://www.instagram.com/ashokdhudla/" target="_blank" rel="noreferrer">
-                    <FaInstagram size={20} className='icons'/>
+                    <FaInstagram size={20} className='odoo_icons'/>
                   </a>
                 </div>
                 <div>
                   <a href="https://www.linkedin.com/in/ashok-dhudla-96a11358/?originalSubdomain=in" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={20} className='icons'/>
+                    <FaLinkedin size={20} className='odoo_icons'/>
                   </a>
                   
                 </div>

@@ -1,14 +1,33 @@
-.python_mainContainer {
+.odoo_mainContainer {
     position: relative;
-    font-size: 5rem;
-    margin-top: 5rem;
-    padding: 6rem;
+    margin-top: 3vw;
+    padding: 6vw;
     color:orange;
-    /* color: black; */
+    text-align: center;
+    z-index: 1;
     max-height: fit-content;
 }
+.odoo_mainContainer_img{
+    position: relative;
+    z-index: 2; 
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.odoo_mainContainer_img h2{
+    font-family: "Rubik";
+    font-size: 1.6vw;
+    color: #111111;
+}
+.odoo_mainContainer_img h5{
+    font-family: "Rubik";
+    font-size: 1.4vw;
+    color: #111111;
+    font-weight: 400;
+}
 
-.python_mainContainer::before {
+.odoo_mainContainer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -21,47 +40,30 @@
     opacity: 0.2; /* Set opacity for the background image */
     z-index: 1;
 }
-
-.python_mainContainer_img {
-    position: relative;
-    z-index: 2; /* Ensure the text is above the background image */
-    padding-top: 2rem;
+.odoo_subContainer{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    padding: 3vw;
+    gap:2vw
 }
-.python_mainContainer_img h2{
+.odoo_subContainer h2{
     color: #111111;
-    font-size: 30px;
-}
-.python_mainContainer_img h5{
-    color: #111111;
-    font-size: 16px;
-    font-family: 'Rubik';
-    font-weight: 400;
-}
-.python_subContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 4rem;
-    text-align: left;
-    /* font-family:Arial, Helvetica, sans-serif; */
-   
-}
-.python_subContainer h2{
-    color:#111111;
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-weight: 300;
-    font-size: 24px;
+}
+.odoo_subContainer img{
+    width: 63vw;
 }
 .overview{
     display: flex;
-    gap: 4rem;
+    justify-content: center;
+    gap: 4vw;
     background-color: #ece9f9;
-    width: 66%;
-    padding: 1.5rem;
-   justify-content: center;
+    width: 63vw;
+    padding: 2vw;
+    font-size: 1.5vw;
+    font-family: "Rubik";
+   
 }
 .overview h4:hover{
     cursor: pointer;
@@ -71,7 +73,7 @@
     cursor:pointer;
 }
 
-.overview_maincontainer{
+.content .overview_maincontainer{
     font-family: 'Rubik';
     font-weight: 100;
     color: #616161;
@@ -79,54 +81,17 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 50rem;
+    width: 63vw;
+
 }
 .odoo_span{
     color: orange;
 }
-/* .odoo_curriculum_container{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    width: 50rem;
-    box-sizing: border-box;
-}
-.odoo_curriculum_container h2{
-    border-bottom: 1px solid #ccc;
-    padding: 2rem;
-    box-sizing: border-box;
-}
-.odoo_curriculum_container h3{
-    border-bottom: 1px solid #ccc;
-    padding: 2rem;
-    border-top:1px solid #ccc ;
-    box-sizing: border-box;
-
-}
-.odoo_playbtn_container{
-    display: flex;
-    gap:0.5rem;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: #fae6fd;
-    font-family: 'Rubik';
-    box-sizing: border-box;
-}
-.odoo_playbtn_container1{
-    display: flex;
-    gap:0.5rem;
-    align-items: center;
-    padding: 1.5rem;
-    background-color:white;
-    font-family: 'Rubik';
-    box-sizing: border-box;
-} */
-
 .odoo_curriculum_container {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
-    width: 50rem;
+    width: 63vw;
     box-sizing: border-box;
     flex-grow: 1;
 }
@@ -143,7 +108,7 @@
 }
 .odoo_playbtn_container, .odoo_playbtn_container1 {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.7vw;
     align-items: center;
     padding: 1.5vw; /* Use viewport width for padding */
     background-color: #fae6fd;
@@ -156,45 +121,69 @@
 .odoo_playbtn_container1 {
     background-color: white;
 }
-/* 
-@media only screen and (max-width:2560px) {
-    .odoo_curriculum_container{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ccc;
-        width: 91rem;
-        font-size: 1.6rem;
-        box-sizing: border-box;
+.odoo_instructor{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+.odoo_instructor img{
+    width: 20vw;
+    border-radius: 15px;
+   
+    box-shadow: 2px 2px 10px orange;
+
+    border: 3px solid white;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 2px 2px  10px orange;
+    
+}
+.odoo_instructor_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    
+}
+.odoo_instructor_content div p{
+    width: 30vw;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+.odoo_socialmedia{
+    display: flex;
+    gap: 2vw;
+    
+    
+}
+.odoo_icons{
+    width: 3vw;
+    height: 3vw;
+    background-color: #f5f6fa;
+    text-align: center;
+    padding: 8px;
+    border-radius: 0.4vw;
+    
+}
+.odoo_icons:hover{
+    color: orange;
+}
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
+    .odoo_subContainer h2{
+        font-size: 2vw;
     }
-    .odoo_curriculum_container h2{
-        border-bottom: 1px solid #ccc;
-        padding: 2.5rem;
-        font-size: 2rem;
-        box-sizing: border-box;
+    .odoo_subContainer img{
+        height: 30vw;
     }
     .odoo_curriculum_container h3{
-        border-bottom: 1px solid #ccc;
-        padding: 2rem;
-        border-top:1px solid #ccc ;
-        box-sizing: border-box;
-    
+        font-size: 1.4vw;
+        font-family: "Rubik";
+        font-weight: 300;
     }
-    .odoo_playbtn_container{
-        display: flex;
-        gap:0.5rem;
-        align-items: center;
-        padding: 2rem;
-        background-color: #fae6fd;
-        font-family: 'Rubik';
-        box-sizing: border-box;
+    .odoo_curriculum_container .odoo_playbtn_container,.odoo_playbtn_container1{
+        font-size: 1vw;
     }
-    .odoo_playbtn_container1{
-        display: flex;
-        gap:0.5rem;
-        align-items: center;
-        padding: 2rem;
-        background-color:white;
-        font-family: 'Rubik';
-        box-sizing: border-box;
-    }
-} */
+}
