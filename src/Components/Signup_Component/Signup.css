@@ -11,8 +11,9 @@
   margin: 5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 30rem;
   width: 100%;
+  max-width: 30rem;
+  
   
 }
 .signup-form h2{
@@ -58,6 +59,21 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+
+@media screen and (max-width:425px) {
+  .signup-container{
+    height: 100%;
+    max-height: fit-content;
+    padding: 0;
+  }
+  .signup-container .signup-form{
+    width: 100%;
+    margin: 20vw 6vw;
+    margin-top: 25vw;
+    
+  }
 }
 
 @media (max-width:768px) {
