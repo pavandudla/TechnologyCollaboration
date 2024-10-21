@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './Forgot_password.css'; // Add this line to import the CSS
+import { Link } from 'react-router-dom';
+import { FaCircleArrowLeft } from "react-icons/fa6";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -53,6 +55,10 @@ function ForgotPassword() {
           />
         </div>
         <button type="submit" className="submit-button">Submit</button>
+        <div className="forgotpassword_bottom_links">
+          <FaCircleArrowLeft />
+          <Link to="/login"><p>Back to Login</p></Link>
+        </div>
       </form>
 
      
