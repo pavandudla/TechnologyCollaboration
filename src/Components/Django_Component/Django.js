@@ -262,11 +262,11 @@ const Django=()=>{
           <div className='django_instructor'>
             <img src={Babai} width={250}/>
             <div className='django_instructor_content'>
-              <div className='django_instructor_content_below'>
+              <div className='django_instructor_content_div'>
                 <h2>Ashok Dhudla</h2>
                 <p>Django Developer (10+ years of experience)</p>
               </div>
-              <div className='django_instructor_content_below'>
+              <div>
                 <h4>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</h4>
               </div>
               <div className='django_socialmedia'>

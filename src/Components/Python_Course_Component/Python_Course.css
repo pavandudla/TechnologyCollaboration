@@ -118,7 +118,7 @@
 }
 .overview_description{
     font-size: 1.2vw;
-    /* width: 63vw; */
+    
 }
 
 
@@ -192,7 +192,7 @@ a:hover {
 }
 .curriculum_maincontainer h2{
      padding: 2vw; 
-     /* border-bottom: 1px solid rgb(190, 190, 190); */
+    
 }
 .play_btn{
     color: orange;
