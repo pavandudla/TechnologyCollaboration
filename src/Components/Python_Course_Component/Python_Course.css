@@ -1,10 +1,10 @@
 .python_mainContainer {
     position: relative;
-    font-size: 5rem;
-    margin-top: 5rem;
-    padding: 6rem;
+    font-size: 5vw;
+    margin-top: 5vw;
+    padding: 6vw;
     color:orange;
-    /* color: black; */
+    
 }
 
 .python_mainContainer::before {
@@ -24,47 +24,49 @@
 .python_mainContainer_img {
     position: relative;
     z-index: 2; /* Ensure the text is above the background image */
-    padding-top: 2rem;
+    padding-top: 2vw;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0;
 }
 .python_mainContainer_img h2{
     color: #111111;
-    font-size: 30px;
+    font-size: 2vw;
 }
 .python_mainContainer_img h5{
     color: #111111;
-    font-size: 16px;
+    font-size: 1.5vw;
     font-family: 'Rubik';
     font-weight: 400;
 }
 .python_subContainer{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2.5rem;
+    gap: 2vw;
+    padding: 3vw;
     text-align: left;
-    /* font-family:Arial, Helvetica, sans-serif; */
+   
    
 }
 .python_subContainer h2{
     color:#111111;
     font-family: 'Rubik';
     font-weight: 300;
-    font-size: 24px;
+    font-size: 2vw;
+}
+.python_subContainer img{
+    width: 63vw;
 }
 .python_subContainer .overview{
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 4rem;
+    gap: 6vw;
     background-color: #ece9f9;
-    width: 50rem;
-    padding: 2rem;
+    width: 63vw;
+    padding: 2vw;
     box-sizing: border-box;
     justify-content: center;
     font-family: 'Rubik';
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 200;
     font-style: normal;
     letter-spacing: 0.8px;
@@ -88,7 +90,7 @@
     content: '';
     position: absolute;
     left: 50%; /* Start from the middle */
-    bottom: -1.5rem;
+    bottom: -2vw;
     width: 0; /* Initially, no width */
     border-bottom: 2px solid orange;
     transition: width 0.5s ease, left 0.5s ease; /* Smooth transition */
@@ -103,55 +105,62 @@
 }
 
 
-.overview_maincontainer{
+.content .overview_maincontainer{
     font-family: 'Rubik';
     font-weight: 100;
     color: #616161;
-    line-height: 2rem;
+    line-height: 2vw;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    width: 50rem;
+    gap: 2vw;
+    width: 63vw;
+    
+}
+.overview_description{
+    font-size: 1.2vw;
+    /* width: 63vw; */
 }
 
 
 .instructor{
     font-family: 'Rubik';
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 200;
-    line-height: 2rem;
+    line-height: 2vw;
     display: flex;
-    gap: 1.5rem;
+    gap: 2vw;
     align-items: center;
+    width: 63vw;
 }
 .instructor img{
     border: 3px solid white;
     border-top: 5px solid white;
     border-left: 5px solid white;
-    border-radius: 15px;
+    border-radius: 1vw;
     box-shadow: 2px 2px  10px orange;
     width: 20vw;
 }
 .instructor p{
     color: #5e5c5c;
-    width: 25rem;
+    
 }
 .instructor_content{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1vw;
 }
 .instructor_content h4{
     color: #5e5c5c;
-    width: 25rem;
     font-family: 'Rubik';
     font-weight: 200;
 }
 .icons{
     background-color: #f5f6fa;
     text-align: center;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 12%;
+    border-radius: 0.3vw;
+    width: 2.3vw;
+    height: 2.3vw;
 }
 .icons:hover{
     background-color: orange;
@@ -168,7 +177,7 @@ a:hover {
 }
 .socialmedia{
     display: flex;
-    gap: 1.5rem;
+    gap: 2vw;
 }
 
 .python_span{
@@ -176,13 +185,13 @@ a:hover {
 }
 .curriculum_maincontainer{
     border: 1px solid #bebebe;
-    width: 50rem;
+    width: 63vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 .curriculum_maincontainer h2{
-     padding: 2rem; 
+     padding: 2vw; 
      /* border-bottom: 1px solid rgb(190, 190, 190); */
 }
 .play_btn{
@@ -190,7 +199,7 @@ a:hover {
 }
 
 .playbtn_container h3{
-    padding: 1.7rem;
+    padding: 1.7vw;
     font-family: 'Rubik';
     font-weight:300;
     display: flex;
@@ -206,9 +215,9 @@ a:hover {
 
 .playbtn_subcontainer{
     display: flex;
-    gap:0.5rem;
+    gap:0.5vw;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5vw;
     background-color: #fae6fd;
     font-family: 'Rubik';
 
@@ -216,87 +225,129 @@ a:hover {
 }
 .playbtn_subcontainer1{
     display: flex;
-    gap:0.5rem;
+    gap:0.5vw;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5vw;
     background-color:white;
     font-family: 'Rubik';
 }
-@media (min-width:321px) and (max-width:426px) {
+@media screen and (max-width:425px) {
+    .python_mainContainer::before {
+        margin-top: 10vw;
+        height: 80%;
+       
+    }
+    .python_mainContainer .python_mainContainer_img{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap:2vw;
+        padding: 10vw;
+        margin-top: 10vw;
+        
+
+    }
+    .python_mainContainer .python_mainContainer_img h2{
+        font-size: 4vw;
+        margin: 0;
+    }
+    .python_mainContainer .python_mainContainer_img h5{
+        font-size: 3vw;
+        margin: 0;
+    }
     .python_subContainer{
         display: flex;
         flex-direction: column;
-        justify-items: baseline;
-        box-sizing: border-box;
-        padding: 0px;
-        /* border: 1px solid black; */
-        
-        
+        margin:2vw;
+        gap: 4vw;
+       
+    }
+    .python_subContainer h2{
+        font-size: 3.2vw;
+        margin-bottom: 0;
     }
     .python_subContainer img{
-        max-width:100%;
-        height: 100%;
+        width: 80vw;
+        height: 40vw;
+        
     }
-    .python_subContainer .overview {
-        display: flex;
-        /* flex-wrap: wrap; */
-        gap: 2rem;
-        background-color: #ece9f9;
-        color: #333;
-        /* width: 100%; */
-        max-width:100%; /* Adjust the maximum width */
-        padding: 2rem;
-        padding-left: 2rem; /* Reduce left padding */
-        padding-right: 2rem; /* Reduce right padding */
-        /* border: 1px solid black; */
-        box-sizing: border-box;
-        justify-content: center;
-        font-family: 'Rubik';
-        font-size: 13px;
-        font-weight: 200;
-        font-style: normal;
-        letter-spacing: 0.8px;
-        overflow-x: hidden; /* Prevent horizontal overflow */
+    .python_subContainer .overview{
+        width: 80vw;
+        font-size: 3.5vw;
+        gap: 7vw;
+        padding: 4vw;
     }
-    
-   
-    .python_mainContainer .python_subContainer h2{
-        color:yellow;
-        font-family: 'Rubik';
-        font-weight: 100;
-        font-size: 14px;
-        width: 100%;
+    .overview h4::after {
+        bottom: -4vw;
     }
-    .overview_maincontainer{
+    .content .overview_maincontainer{
+        width: 80vw;
+        gap: 4vw;
+    }
+    .overview_maincontainer .overview_description{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        /* width: 100%; */
-        /* border: 1px solid black; */
-        font-size: 13px;
-       
-        max-width: 100%;
+        gap: 2vw;
+    }
+    .overview_maincontainer .overview_description h2{
+        font-size: 4vw;
+    }
+    .overview_maincontainer .overview_description p{
+        font-size: 2vw;
+        line-height: 3vw;
+        
+    }
+    .curriculum_maincontainer{
+        width: 80vw;
+    }
+    .curriculum_maincontainer h2{
+        font-size: 5vw;
+    }
+    .curriculum_maincontainer h3{
+        font-size: 4vw;
+    }
+    .playbtn_subcontainer,.playbtn_subcontainer1{
+        font-size: 2.7vw;
+        padding: 2vw;
     }
     .instructor{
+        width: 80vw;
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        box-sizing: border-box;
+        gap: 5vw;
+
     }
     .instructor img{
-        width:20vw;
+        width: 50vw;
+        height: 50vw;
     }
     .instructor_content{
-        max-width: 20rem;
-        font-size: 14px;
-        box-sizing: border-box;
+        gap: 2vw;
     }
-    .instructor_content h4{
-        max-width: 20rem;
+    .instructor_content_div{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
     }
-    .instructor_content p{
-        max-width: 20rem;
+    .instructor_content_div h2{
+        font-size: 5vw;
     }
+    .instructor_content_div p{
+        font-size: 2vw;
+    }
+    .instructor_content div h4{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+    .socialmedia{
+        gap: 5vw;
+    }
+    .icons{
+        width: 5vw;
+        height: 5vw;
+    }
+    
 }
 
 @media (min-width:1024px) and (max-width:1440px) {

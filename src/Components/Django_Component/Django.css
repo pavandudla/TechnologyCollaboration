@@ -1,4 +1,4 @@
-.python_mainContainer {
+.django_mainContainer {
     position: relative;
     font-size: 5rem;
     margin-top: 5rem;
@@ -7,7 +7,7 @@
     /* color: black; */
 }
 
-.python_mainContainer::before {
+.django_mainContainer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
     z-index: 1;
 }
 
-.python_mainContainer_img {
+.django_mainContainer_img {
     position: relative;
     z-index: 2; /* Ensure the text is above the background image */
     padding-top: 2rem;
@@ -29,17 +29,17 @@
     flex-direction: column;
     gap: 1rem;
 }
-.python_mainContainer_img h2{
+.django_mainContainer_img h2{
     color: #111111;
     font-size: 30px;
 }
-.python_mainContainer_img h5{
+.django_mainContainer_img h5{
     color: #111111;
     font-size: 16px;
     font-family: 'Rubik';
     font-weight: 400;
 }
-.python_subContainer{
+.django_subContainer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -48,13 +48,13 @@
     /* font-family:Arial, Helvetica, sans-serif; */
    
 }
-.python_subContainer h2{
+.django_subContainer h2{
     color:#111111;
     font-family: 'Rubik';
     font-weight: 300;
     font-size: 24px;
 }
-.overview{
+.django_overview{
     display: flex;
     gap: 4rem;
     background-color: #ece9f9;
@@ -62,14 +62,14 @@
     padding: 1.5rem;
    justify-content: center;
 }
-.overview h4:hover{
+.django_overview h4:hover{
     cursor: pointer;
 }
-.overview h4:active{
+.django_overview h4:active{
     color: orange;
     cursor:pointer;
 }
-.overview_maincontainer{
+.django_overview_maincontainer{
     font-family: 'Rubik';
     font-weight: 100;
     color: #616161;
@@ -125,6 +125,126 @@
     padding: 2rem;
     /* border-bottom: 1px solid #bebebe; */
 }
+
+@media screen and (max-width:425px) {
+    .django_mainContainer::before {
+        margin-top: 10vw;
+        height: 80%;
+       
+    }
+    .django_mainContainer .django_mainContainer_img{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap:2vw;
+        padding: 10vw;
+        margin-top: 10vw;
+        
+
+    }
+    .django_mainContainer .django_mainContainer_img h2{
+        font-size: 4vw;
+        margin: 0;
+    }
+    .django_mainContainer .django_mainContainer_img h5{
+        font-size: 3vw;
+        margin: 0;
+    }
+    .django_subContainer{
+        display: flex;
+        flex-direction: column;
+        margin:2vw;
+        gap: 4vw;
+       
+    }
+    .django_subContainer h2{
+        font-size: 3.2vw;
+        margin-bottom: 0;
+    }
+    .django_subContainer img{
+        width: 80vw;
+        height: 40vw;
+        
+    }
+    .django_subContainer .django_overview{
+        width: 80vw;
+        font-size: 3.5vw;
+        gap: 7vw;
+        padding: 4vw;
+    }
+    .django_overview h4::after {
+        bottom: -4vw;
+    }
+    .django_content .django_overview_maincontainer{
+        width: 80vw;
+        gap: 4vw;
+    }
+    .django_overview_maincontainer .django_overview_description{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .django_overview_maincontainer .django_overview_description h2{
+        font-size: 4vw;
+    }
+    .django_overview_maincontainer .django_overview_description p{
+        font-size: 2vw;
+        line-height: 3vw;
+        
+    }
+    .django_curriculum_maincontainer{
+        width: 80vw;
+    }
+    .django_curriculum_maincontainer h2{
+        font-size: 5vw;
+    }
+    .django_curriculum_maincontainer h3{
+        font-size: 4vw;
+    }
+    .playbtn_subcontainer,.playbtn_subcontainer1{
+        font-size: 2.7vw;
+        padding: 2vw;
+    }
+    .django_instructor{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 5vw;
+
+    }
+    .django_instructor img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .django_instructor_content{
+        gap: 2vw;
+    }
+    .django_instructor_content_div{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .django_instructor_content_div h2{
+        font-size: 5vw;
+    }
+    .django_instructor_content_div p{
+        font-size: 2vw;
+    }
+    .django_instructor_content div h4{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+    .django_socialmedia{
+        gap: 5vw;
+    }
+    .django_icons{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+}
+
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
     .python_subContainer .python_subContainer_heading2{

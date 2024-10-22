@@ -56,9 +56,9 @@ const Odoo=()=>{
                 <h4 onClick={showInstructor} className={activeSection=="instructor"?"active-tab":""}>Instructor</h4>
                
             </div>
-            <div className="content">
+            <div className="odoo_content">
             {activeSection === 'overview' && (
-          <div className='overview_maincontainer'>
+          <div className='odoo_overview_maincontainer'>
             <div>
                     <h2>Course Description</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>

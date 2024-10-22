@@ -51,7 +51,7 @@ const Python=()=>{
             </div>       
         </div>
          <div className='python_subContainer'>
-            <h2 className='python_subContainer_heading'>Leading the way with life learning</h2>
+            <h2>Leading the way with life learning</h2>
             <img src={pythonLanguage_img} width={800} height={400}/>
             <div className='overview'>
                 <h4 onClick={showOverview} className={activeSection === 'overview' ? 'active-tab' : ''}>Overview</h4>
