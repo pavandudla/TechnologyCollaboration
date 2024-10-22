@@ -66,11 +66,11 @@ const Python_fullstack=()=>{
             <div className="fullstack_content">
         {activeSection === 'overview' && (
           <div className='fullstack_overview_maincontainer'>
-            <div>
+            <div className='fullstack_overview_description'>
                     <h2>Course Description</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
             </div>
-            <div>
+            <div className='fullstack_overview_description'>
                     <h2>Certification Online</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
            </div>
@@ -80,8 +80,8 @@ const Python_fullstack=()=>{
         {activeSection === 'curriculum' && (
           <><div className='fullstack_curriculum_container'>
                 <h2>FullStack Curriculum</h2>
-                <h2 className='fullstackcurriculum_maincontainer-heading'>Python Curriculum</h2>
-                      <div className='fullstackplaybtn_container'>
+                <h2>Python Curriculum</h2>
+                      <div className='fullstack_playbtn_container'>
                             {pythonfullstack_basic_minusShow ?
                               (<div >
                                 <h3>Introduction to python bascis <TiMinus onClick={pythonfullstack_basic_plus_minus_Onclick} className='python_minus_btn' /></h3>
@@ -112,7 +112,7 @@ const Python_fullstack=()=>{
                               (<h3>Introduction to python bascis <FaPlus  onClick={pythonfullstack_basic_plus_minus_Onclick}  className='python_plus_btn'/></h3>)
                             }
                         </div>
-                      <div className='fullstackplaybtn_container'>
+                      <div className='fullstack_playbtn_container'>
                         {pythonfullstack_intermediate_minusShow ?
                             (<>
                             <h3>Intermediate python concepts <TiMinus onClick={pythonfullstack_intermediate_plus_minus_Onclick} className='python_minus_btn' /></h3>
@@ -142,7 +142,7 @@ const Python_fullstack=()=>{
                         }
                       </div>
 
-                      <div className='fullstackplaybtn_container'>
+                      <div className='fullstack_playbtn_container'>
                           {pythonfullstack_advanced_minusShow?
                             (<>
                                 <h3>Advanced python concepts <TiMinus onClick={pythonfullstack_advanced_plus_minus_Onclick} className='python_minus_btn' /></h3>
@@ -193,7 +193,7 @@ const Python_fullstack=()=>{
                           }
                       </div>  
 
-                      <div className='fullstackplaybtn_container'> 
+                      <div className='fullstack_playbtn_container'> 
                         {pythonfullstack_specialized_minusShow ?  
                           (<>
                               <h3>Specialized Topics and Projects <TiMinus onClick={pythonfullstack_specialized_plus_minus_Onclick} className='python_minus_btn' /></h3>
@@ -223,7 +223,7 @@ const Python_fullstack=()=>{
 
                   <h2>Javascript Curriculum</h2>
                   <div className='fullstack_javascript_container'> 
-                  {pythonfullstack_javascript_basic_minusShow ?
+                    {pythonfullstack_javascript_basic_minusShow ?
                     
                       (<div>
                         <h3>Javascript Basics <TiMinus onClick={pythonfullstack_javascript_basic_plus_minus_Onclick} className='fullstack_minus_btn' /></h3>
@@ -340,9 +340,9 @@ const Python_fullstack=()=>{
         )}
 
 {activeSection === 'instructor' && (
-          <div className='fullstackinstructor'>
+          <div className='fullstack_instructor'>
             <img src={Babai} width={250}/>
-            <div className='fullstackinstructor_content'>
+            <div className='fullstack_instructor_content'>
               <div>
                 <h2>Ashok Dhudla</h2>
                 <p>Python fullstack Developer (10+ years of experience)</p>
@@ -350,26 +350,26 @@ const Python_fullstack=()=>{
               <div> 
                 <h4>Jone Smit is a celebrated photographer, author, and writer who brings passion to everything he does.</h4>
               </div>
-              <div className='fullstacksocialmedia'>
+              <div className='fullstack_socialmedia'>
                 <div >
                   <a  href="https://www.facebook.com/Ashokdhudla" target="_blank" rel="noreferrer">
-                      <FaFacebookF size={20} className='fullstackicons' />
+                      <FaFacebookF size={20} className='fullstack_icons' />
                       
                   </a>
                 </div>  
                 <div>
                   <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                    <FaTwitter size={20} className='fullstackicons'/>
+                    <FaTwitter size={20} className='fullstack_icons'/>
                   </a>
                 </div> 
                 <div>
                   <a href="https://www.instagram.com/ashokdhudla/" target="_blank" rel="noreferrer">
-                    <FaInstagram size={20} className='fullstackicons'/>
+                    <FaInstagram size={20} className='fullstack_icons'/>
                   </a>
                 </div>
                 <div>
                   <a href="https://www.linkedin.com/in/ashok-dhudla-96a11358/?originalSubdomain=in" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={20} className='fullstackicons'/>
+                    <FaLinkedin size={20} className='fullstack_icons'/>
                   </a>
                   
                 </div>
