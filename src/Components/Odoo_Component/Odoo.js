@@ -151,7 +151,7 @@ const Odoo=()=>{
           </div>
         )}
 
-{activeSection === 'instructor' && (
+        {activeSection === 'instructor' && (
           <div className='odoo_instructor'>
             <img src={Babai} width={250}/>
             <div className='odoo_instructor_content'>
